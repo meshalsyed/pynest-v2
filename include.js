@@ -85,9 +85,9 @@
 
   document.addEventListener("DOMContentLoaded", function(){
     Promise.all([
-      inject("site-header", "/components/navbar.html"),
-      inject("site-footer", "/components/footer.html"),
-      inject("site-social-dock", "/components/social-dock.html")
+      inject("site-header", "/pynest-v2/components/navbar.html"),
+      inject("site-footer", "/pynest-v2/components/footer.html"),
+      inject("site-social-dock", "/pynest-v2/components/social-dock.html")
     ]).then(function(){
       markActiveNavLink();
       setFooterYear();
