@@ -1,1 +1,116 @@
+/* ══════════════════════════════════════════════════════════════════
+   PYNEST — SHARED DESIGN SYSTEM
+   Extracted verbatim from the production homepage (index.html).
+   This file is the single source of truth for tokens + shared
+   components (nav, footer, social dock, buttons, typography) used
+   across every inner page. DO NOT redesign — only extend.
+   ══════════════════════════════════════════════════════════════════ */
 
+/* [PERFORMANCE] box-sizing reset prevents CLS from padding/border calculations */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --g:#D4AF72;--gl:#EDD99A;--gd:#A07840;--gp:#F8EDD3;
+  --iv:#F5F3EE;--cr:#EDEAE3;--be:#E2DDD4;--bd:#B8B0A2;
+  --ch:#12181A;--c2:#1C2426;--c3:#253033;
+  --td:#12181A;--tm:#3A4A4E;--ts:#7A8A8E;
+  --wh:#FFFFFF;
+  --ff-h:'Cormorant Garamond',Georgia,serif;
+  --ff-b:'Jost',sans-serif;
+  --ff-i:'Cormorant',Georgia,serif;
+  --r1:4px;--r2:10px;--r3:18px;--r4:28px;
+  --s1:0 2px 12px rgba(60,40,10,.08);
+  --s2:0 8px 40px rgba(40,26,8,.14);
+  --s3:0 20px 80px rgba(20,12,4,.22);
+  --trans:.4s cubic-bezier(.25,.46,.45,.94);
+}
+
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--ff-b);background:var(--iv);color:var(--td);overflow-x:hidden}
+
+/* [A11Y] Skip-to-content link for keyboard users — visually hidden until focused */
+.skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;background:var(--g);color:var(--ch);padding:12px 20px;border-radius:4px;font-family:var(--ff-b);font-size:.8rem;font-weight:600;letter-spacing:.1em;z-index:100000;text-decoration:none}
+
+/* ─── NAV ─── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:8px 5vw;display:flex;align-items:center;justify-content:space-between;background:rgba(18,24,26,.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(212,175,114,.14);transition:padding var(--trans),box-shadow var(--trans)}
+#nav.solid{padding:15px 5vw;box-shadow:0 4px 32px rgba(0,0,0,.4)}
+.nav-logo{font-family:var(--ff-h);font-size:1.8rem;color:var(--g);letter-spacing:.14em;font-weight:400;text-decoration:none;display:flex;flex-direction:column;line-height:1.1}
+.logo-img{height:60px;width:auto}
+.nav-links{display:flex;gap:36px;list-style:none}
+.nav-links a{font-family:var(--ff-b);font-size:.72rem;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.6);text-decoration:none;transition:color .3s}
+.nav-links a:hover,.nav-links a.active{color:var(--g)}
+.nav-links a:focus-visible{outline:2px solid var(--g);outline-offset:4px;border-radius:2px}
+.nav-cta{font-family:var(--ff-b);font-size:.65rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;background:transparent;border:1px solid rgba(201,169,110,.5);color:var(--g);padding:11px 24px;border-radius:2px;cursor:pointer;transition:background .3s,border-color .3s,color .3s}
+.nav-cta:hover{background:var(--g);border-color:var(--g);color:var(--ch)}
+.nav-cta:focus-visible{outline:2px solid var(--gl);outline-offset:3px}
+@media(max-width:900px){.nav-links{display:none}}
+
+/* ─── SECTIONS / TYPOGRAPHY ─── */
+section{padding:clamp(60px,10vh,120px) 5vw}
+.sec-inner{max-width:1200px;margin:0 auto}
+.sec-label{font-family:var(--ff-b);font-size:.58rem;letter-spacing:.45em;text-transform:uppercase;color:var(--gd);display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.sec-label::before{content:'';display:block;width:32px;height:1px;background:linear-gradient(90deg,var(--gd),var(--g))}
+.sec-h2{font-family:var(--ff-h);font-size:clamp(2rem,4vw,3.8rem);font-weight:300;line-height:1.1;color:var(--td)}
+.sec-h2 em{font-style:italic;color:var(--gd)}
+.gold-rule{width:48px;height:1px;background:linear-gradient(90deg,var(--gd),var(--gl));margin:20px 0}
+
+/* ─── BUTTONS ─── */
+.btn-outline{display:inline-flex;align-items:center;gap:10px;font-family:var(--ff-b);font-size:.65rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.7);background:transparent;border:1px solid rgba(255,255,255,.25);padding:14px 28px;border-radius:2px;text-decoration:none;transition:all .3s;cursor:pointer}
+.btn-outline:hover{color:var(--wh);border-color:rgba(255,255,255,.6)}
+.btn-outline:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+.btn-gold{display:inline-flex;align-items:center;gap:10px;font-family:var(--ff-b);font-size:.65rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ch);background:linear-gradient(135deg,var(--gd),var(--g));padding:14px 28px;border-radius:2px;text-decoration:none;border:none;cursor:pointer;transition:filter .3s,transform .3s,box-shadow .3s}
+.btn-gold:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 12px 40px rgba(160,120,40,.4)}
+.btn-gold:focus-visible{outline:2px solid var(--wh);outline-offset:3px}
+
+/* ─── FOOTER ─── */
+footer{background:#0D1315;padding:72px 5vw 36px;border-top:1px solid rgba(212,175,114,.1)}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:60px}
+@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr;gap:40px}}
+@media(max-width:560px){.footer-top{grid-template-columns:1fr;gap:32px}}
+.footer-brand-logo{font-family:var(--ff-h);font-size:2.4rem;font-weight:300;color:var(--g);letter-spacing:.15em;margin-bottom:14px}
+.footer-brand-desc{font-size:.78rem;font-weight:200;color:rgba(255,255,255,.3);line-height:1.8;margin-bottom:24px}
+.footer-socials{display:flex;gap:10px}
+.f-soc{width:38px;height:38px;border-radius:50%;border:1px solid rgba(201,169,110,.2);display:flex;align-items:center;justify-content:center;color:rgba(201,169,110,.4);text-decoration:none;transition:all .3s;font-size:14px}
+.f-soc:hover{border-color:var(--g);color:var(--g);background:rgba(201,169,110,.08)}
+.f-soc:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+.footer-col-title{font-family:var(--ff-b);font-size:.58rem;letter-spacing:.35em;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:20px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-family:var(--ff-b);font-size:.78rem;font-weight:200;color:rgba(255,255,255,.35);text-decoration:none;transition:color .3s;display:flex;align-items:center;gap:8px}
+.footer-links a:hover{color:var(--g)}
+.footer-links a:focus-visible{outline:2px solid var(--g);outline-offset:3px;border-radius:2px}
+.footer-links a::before{content:'';display:block;width:0;height:1px;background:var(--g);transition:width .3s}
+.footer-links a:hover::before{width:12px}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:28px;border-top:1px solid rgba(255,255,255,.06)}
+.footer-copy{font-size:.65rem;color:rgba(255,255,255,.18)}
+.footer-copy a{color:rgba(201,169,110,.4);text-decoration:none}
+.footer-legal{display:flex;gap:24px;flex-wrap:wrap}
+.footer-legal a{font-size:.6rem;color:rgba(255,255,255,.2);text-decoration:none;transition:color .3s}
+.footer-legal a:hover{color:var(--g)}
+
+/* ─── SOCIAL DOCK (floating WhatsApp / IG / FB) ─── */
+.s-dock{position:fixed;right:20px;bottom:28px;z-index:500;display:flex;flex-direction:column;align-items:center;gap:8px}
+.s-dock-card{background:rgba(18,24,26,.95);backdrop-filter:blur(16px);border:1px solid rgba(212,175,114,.18);border-radius:36px;padding:12px 8px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 12px 48px rgba(0,0,0,.4)}
+.s-btn{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:rgba(156,138,112,.7);background:transparent;transition:all .25s}
+.s-btn svg{width:16px;height:16px;fill:currentColor}
+.s-btn:hover{transform:scale(1.15)}
+.s-btn:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+.s-btn.wa:hover{color:#25D366;background:rgba(37,211,102,.1)}
+.s-btn.ig:hover{color:#E4405F;background:rgba(228,64,95,.1)}
+.s-btn.fb:hover{color:#5890FF;background:rgba(88,144,255,.1)}
+.s-sep{width:18px;height:1px;background:rgba(201,169,110,.12)}
+.s-dock-line{width:1px;height:48px;background:linear-gradient(to bottom,transparent,rgba(201,169,110,.3))}
+@media(max-width:560px){.s-dock-line{display:none}}
+
+/* ─── SCROLL REVEAL ─── */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:.1s}
+.reveal-d2{transition-delay:.2s}
+.reveal-d3{transition-delay:.3s}
+.reveal-d4{transition-delay:.4s}
+.reveal-d5{transition-delay:.5s}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+}
