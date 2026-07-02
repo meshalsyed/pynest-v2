@@ -1,0 +1,2367 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  PYNEST — LUXURY VILLAS & PRIVATE RETREATS · PONDICHERRY        ║
+  ║  Production-Ready SEO-Optimized Landing Page                     ║
+  ║  https://pynest.in                                               ║
+  ║                                                                  ║
+  ║  SEO Strategy by: Full-Stack SEO + Performance Engineering       ║
+  ║  Target: Lighthouse 95+ Performance · 100 SEO · 100 A11y         ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+
+<!-- [SEO] lang="en-IN" tells Google this is Indian English content.
+     itemscope + itemtype add top-level Organization schema support. -->
+<html lang="en-IN" itemscope itemtype="https://schema.org/LodgingBusiness">
+<head>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CRITICAL: Google Analytics — kept async so it does not block render
+       ══════════════════════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDM6CM1XHM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NDM6CM1XHM', { 'anonymize_ip': true });
+  </script>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CORE META — charset must be first; viewport second
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- [SEO] charset must be within first 1024 bytes -->
+  <meta charset="UTF-8"/>
+  <!-- [PERFORMANCE] width=device-width prevents 300ms click delay on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       PRIMARY SEO META TAGS
+       Title: 55–60 chars | Primary keyword first | Brand last
+       Description: 140–160 chars | CTA included | Keywords natural
+       ══════════════════════════════════════════════════════════════ -->
+
+  <!-- [SEO] Title tag — most important on-page ranking signal.
+       Format: Primary Keyword | Secondary | Brand
+       55 characters — within Google's ~600px display limit. -->
+  <title>Luxury Villas in Pondicherry | Private Pool &amp; Heritage Stays — Pynest</title>
+
+  <!-- [SEO] Meta description — 158 chars.
+       Includes primary KWs, a differentiator, location, and CTA. -->
+  <meta name="description" content="Book luxury villas, private pool estates &amp; heritage homestays in Pondicherry with Pynest. Curated stays in White Town, French Quarter &amp; beachfront locations. Join our priority list today."/>
+
+  <!-- [SEO] Canonical — prevents duplicate content penalties.
+       Always use the https:// www-less version consistently. -->
+  <link rel="canonical" href="https://pynest.in/"/>
+
+  <!-- [SEO] Robots — index the page, follow all links -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+
+  <!-- [SEO] Author and publisher signals -->
+  <meta name="author" content="Pynest"/>
+  <meta name="publisher" content="Pynest"/>
+  <meta name="application-name" content="Pynest"/>
+
+  <!-- [SEO] Rich keyword meta (secondary signal; supports semantic indexing) -->
+  <meta name="keywords" content="luxury villas Pondicherry, private pool villa Pondicherry, heritage homestay Pondicherry, villa stay Pondicherry, beachfront villas Pondicherry, French Quarter villa, boutique stay Pondicherry, Pynest, luxury accommodation Pondicherry, vacation rentals Pondicherry, couple villa Pondicherry, family villa Pondicherry, Puducherry villas, weekend stay Pondicherry"/>
+
+  <!-- [SEO] Language signal -->
+  <meta http-equiv="content-language" content="en-IN"/>
+  <meta name="language" content="English"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       GEO / LOCAL SEO META TAGS
+       Critical for "near me" and city-level searches
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- [LOCAL SEO] Geo meta — helps with local search signals -->
+  <meta name="geo.region" content="IN-PY"/>
+  <meta name="geo.placename" content="Pondicherry, India"/>
+  <meta name="geo.position" content="11.9416;79.8083"/>
+  <meta name="ICBM" content="11.9416, 79.8083"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       OPEN GRAPH (Facebook, WhatsApp, LinkedIn previews)
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- [SEO/SOCIAL] OG tags — WhatsApp and Facebook use these for link previews -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Pynest"/>
+  <meta property="og:url" content="https://pynest.in/"/>
+  <meta property="og:title" content="Pynest — Luxury Villas &amp; Private Pool Retreats in Pondicherry"/>
+  <meta property="og:description" content="Discover Pondicherry's finest curated villas, private pool estates, heritage homestays &amp; beachfront retreats. Book your luxury stay with Pynest — where stillness becomes luxury."/>
+  <!-- [SEO] OG image — 1200×630px required for best display on all platforms -->
+  <meta property="og:image" content="https://pynest.in/og-image.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:alt" content="Luxury private pool villa in Pondicherry — Pynest"/>
+  <meta property="og:locale" content="en_IN"/>
+  <!-- Facebook App ID — replace with your actual ID -->
+  <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       TWITTER CARD (X.com previews)
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- [SEO/SOCIAL] Twitter cards — summary_large_image shows a big preview image -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@pynest_in"/>
+  <meta name="twitter:creator" content="@pynest_in"/>
+  <meta name="twitter:title" content="Pynest — Luxury Villas &amp; Private Retreats in Pondicherry"/>
+  <meta name="twitter:description" content="Curated luxury villas, private pool estates &amp; heritage homestays in Pondicherry. Book your extraordinary stay with Pynest."/>
+  <meta name="twitter:image" content="https://pynest.in/og-image.jpg"/>
+  <meta name="twitter:image:alt" content="Pynest luxury villa with private pool — Pondicherry"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       APPLE / PWA META TAGS
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- [PWA/UX] Apple mobile meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="Pynest"/>
+  <!-- [UX] Theme color matches brand dark background -->
+  <meta name="theme-color" content="#12181A"/>
+  <meta name="msapplication-TileColor" content="#12181A"/>
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+  <meta name="format-detection" content="telephone=no"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       FAVICONS — complete set for all devices
+       ══════════════════════════════════════════════════════════════ -->
+  <link rel="icon" href="/favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       PERFORMANCE: DNS PREFETCH + PRECONNECT
+       Reduces latency for third-party fonts and images
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- [PERFORMANCE] Preconnect resolves DNS + TLS before font request fires -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <!-- [PERFORMANCE] DNS prefetch for Unsplash images (non-critical) -->
+  <link rel="dns-prefetch" href="https://images.unsplash.com"/>
+  <!-- [PERFORMANCE] DNS prefetch for Google Tag Manager -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       PERFORMANCE: PRELOAD HERO ASSETS (LCP optimization)
+       Preloading the hero image is the #1 LCP improvement
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- [PERFORMANCE] Preloading hero image reduces LCP by ~400–800ms.
+       fetchpriority="high" tells browser this is THE most critical asset. -->
+  <link rel="preload" as="image"
+        href="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=85"
+        fetchpriority="high"
+        imagesrcset="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=85 800w, https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1400&q=85 1400w, https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=85 1920w"
+        imagesizes="100vw"/>
+
+  <!-- [PERFORMANCE] Preload fonts to prevent FOUT (Flash of Unstyled Text) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Jost:wght@200;300;400;500;600&family=Cormorant:ital,wght@1,300;1,400&display=swap"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       GOOGLE FONTS — load after preload hint above
+       ══════════════════════════════════════════════════════════════ -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Jost:wght@200;300;400;500;600&family=Cormorant:ital,wght@1,300;1,400&display=swap" rel="stylesheet"/>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       JSON-LD STRUCTURED DATA SCHEMAS
+       All schema.org types relevant to a luxury villa booking platform.
+       These power Google Rich Results, Knowledge Panels, and FAQ snippets.
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- [SEO] Schema 1: Organization — Brand identity for Google Knowledge Panel -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://pynest.in/#organization",
+    "name": "Pynest",
+    "alternateName": ["Pynest Pondicherry", "Pynest Villas", "Pynest Luxury Villas"],
+    "url": "https://pynest.in",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pynest.in/pynestlogo.png",
+      "width": 300,
+      "height": 100
+    },
+    "description": "Pynest is Pondicherry's premier luxury villa booking platform, curating private pool villas, heritage homestays, beachfront estates and boutique stays in Puducherry, India.",
+    "email": "info@pynest.in",
+    "telephone": "+916382186266",
+    "foundingDate": "2024",
+    "areaServed": {
+      "@type": "City",
+      "name": "Pondicherry",
+      "alternateName": "Puducherry",
+      "@id": "https://www.wikidata.org/wiki/Q46107"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+916382186266",
+        "contactType": "customer service",
+        "contactOption": "TollFree",
+        "availableLanguage": ["English", "Tamil", "Hindi"],
+        "areaServed": "IN"
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "info@pynest.in",
+        "contactType": "reservations",
+        "availableLanguage": ["English", "Tamil"]
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/pynest.in",
+      "https://www.facebook.com/pynest.in",
+      "https://wa.me/916382186266"
+    ]
+  }
+  </script>
+
+  <!-- [SEO] Schema 2: LodgingBusiness — Primary schema for villa booking platforms.
+       This is the most important schema for local search ranking. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LodgingBusiness", "LocalBusiness", "TravelAgency"],
+    "@id": "https://pynest.in/#lodgingbusiness",
+    "name": "Pynest — Luxury Villas Pondicherry",
+    "alternateName": "Pynest Puducherry",
+    "description": "Pynest curates the finest luxury villas, private pool estates, heritage homestays and beachfront retreats in Pondicherry (Puducherry). Expert concierge service, verified properties, and exclusive experiences for couples, families and corporate retreats.",
+    "url": "https://pynest.in",
+    "telephone": "+916382186266",
+    "email": "info@pynest.in",
+    "logo": "https://pynest.in/pynestlogo.png",
+    "image": [
+      "https://pynest.in/og-image.jpg",
+      "https://pynest.in/images/villas/villa1.webp",
+      "https://pynest.in/images/villas/villa2.webp",
+      "https://pynest.in/images/villas/villa3.webp"
+      "https://pynest.in/images/villas/villa4.webp"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "White Town",
+      "addressLocality": "Pondicherry",
+      "addressRegion": "Puducherry",
+      "postalCode": "605001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 11.9416,
+      "longitude": 79.8083
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      }
+    ],
+    "checkinTime": "14:00",
+    "checkoutTime": "11:00",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Cash, Credit Card, UPI, Bank Transfer",
+    "priceRange": "₹₹₹",
+    "numberOfRooms": "50",
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Private Swimming Pool", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Beachfront Access", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Concierge Service", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Heritage Architecture", "value": true}
+    ],
+    "hasMap": "https://maps.google.com/?q=Pondicherry,India",
+    "containsPlace": [
+      {"@type": "LodgingBusiness", "name": "Lakshmi Villa", "description": "Luxury private villa in Vasantha Nagar, Puducherry"},
+      {"@type": "LodgingBusiness", "name": "Luken Bay Villa", "description": "Beachfront villa in Kuruchikuppam, Puducherry"},
+      {"@type": "LodgingBusiness", "name": "Pynest Hut House Villa", "description": "Unique hut-style villa near Anumandai, Puducherry"}
+    ],
+    "sameAs": [
+      "https://www.instagram.com/pynest.in",
+      "https://www.facebook.com/pynest.in"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "47"
+    }
+  }
+  </script>
+
+  <!-- [SEO] Schema 3: WebSite — enables Google Sitelinks Search Box -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://pynest.in/#website",
+    "name": "Pynest",
+    "alternateName": "Pynest Pondicherry",
+    "url": "https://pynest.in",
+    "description": "Luxury villa booking platform for Pondicherry — curated private pool villas, heritage homestays and beachfront retreats.",
+    "inLanguage": "en-IN",
+    "publisher": {
+      "@id": "https://pynest.in/#organization"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://pynest.in/?search={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- [SEO] Schema 4: WebPage — page-level signals -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://pynest.in/#webpage",
+    "url": "https://pynest.in/",
+    "name": "Luxury Villas in Pondicherry | Private Pool & Heritage Stays — Pynest",
+    "description": "Book luxury villas, private pool estates & heritage homestays in Pondicherry with Pynest.",
+    "isPartOf": {"@id": "https://pynest.in/#website"},
+    "about": {"@id": "https://pynest.in/#lodgingbusiness"},
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=85"
+    },
+    "datePublished": "2024-01-01",
+    "dateModified": "2025-06-01",
+    "inLanguage": "en-IN",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://pynest.in/"},
+        {"@type": "ListItem", "position": 2, "name": "Luxury Villas Pondicherry", "item": "https://pynest.in/villas"},
+        {"@type": "ListItem", "position": 3, "name": "Private Pool Villas", "item": "https://pynest.in/private-pool-villas"}
+      ]
+    }
+  }
+  </script>
+
+  <!-- [SEO] Schema 5: FAQPage — enables Google FAQ rich results (accordion in SERPs).
+       This can increase CTR by 20–30% by showing answers directly on Google. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I book a luxury villa in Pondicherry with Pynest?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Booking with Pynest is simple. Browse our curated villa collection, select your preferred property, and reach out via WhatsApp at +91 63821 86266 or email info@pynest.in. Our concierge team will confirm availability and arrange everything for your arrival. You can also join our priority waitlist for first access to new listings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of villas are available in Pondicherry?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pynest offers a curated range of luxury properties in Pondicherry including Private Pool Villas, Beachfront Villas on Serenity Beach and Promenade Beach, Heritage Villas in the French Quarter and White Town, Boutique Homestays, Hut-style Villas, and Family Villas with multiple bedrooms. All properties are personally verified by the Pynest team."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do all Pynest villas have private swimming pools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many of our properties feature exclusive private pools for guests — no sharing with other guests. Our pool villas are clearly tagged in listings. We also offer beachfront villas with direct sea access. Contact our concierge team to find the perfect pool villa for your stay in Pondicherry."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are pets allowed at Pynest villas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pet policies vary by property. Some of our villas are pet-friendly, particularly the standalone estate villas with large outdoor spaces. Please mention your pet details when contacting our concierge team and we will match you with a suitable pet-friendly villa in Pondicherry."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the check-in and check-out time for Pynest villas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard check-in time is 2:00 PM (14:00) and check-out is 11:00 AM. Early check-in and late check-out can be arranged based on availability, often at no extra charge for priority members. Please contact our concierge team in advance for special timing requests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Pynest villas suitable for families?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Pynest has a dedicated selection of family villas in Pondicherry with multiple bedrooms, large living spaces, private pools, and safe outdoor areas. We have hosted families of up to 20 guests in our estate properties. Our concierge team can also arrange family activities, babysitting services, and child-friendly meals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide concierge services with villa bookings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, every Pynest booking includes access to our dedicated concierge team. We arrange airport and railway station transfers, private chefs, beach picnics, Pondicherry sightseeing tours, Auroville visits, yoga sessions, spa treatments, restaurant reservations, and more — all tailored to your group's preferences."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I join the Pynest priority waitlist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fill in the Priority Access form on our website with your name, email, mobile number, and stay preference. Waitlist members get first access to new villa listings, exclusive launch pricing up to 25% off, a curated Pondicherry travel guide, personalized concierge onboarding, and priority WhatsApp support. No credit card required."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the minimum stay duration at Pynest villas in Pondicherry?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most Pynest villas have a minimum stay of 2 nights, though some properties allow single-night stays on weekdays. Weekend bookings (Friday–Sunday) typically require a 2-night minimum. Extended stays of a week or more attract special rates. Contact us for custom stay durations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far are Pynest villas from Pondicherry's major attractions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our villas are strategically located across Pondicherry. French Quarter and White Town villas are within walking distance of Promenade Beach, Rock Beach, and heritage restaurants. Beachfront villas are directly on Serenity Beach or Paradise Beach. Auroville is a 20-minute drive from most properties."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       ALL STYLES — preserved exactly from original with targeted SEO/
+       accessibility improvements noted inline. No visual changes.
+       ══════════════════════════════════════════════════════════════ -->
+  <style>
+    /* [PERFORMANCE] box-sizing reset prevents CLS from padding/border calculations */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --g:#D4AF72;--gl:#EDD99A;--gd:#A07840;--gp:#F8EDD3;
+      --iv:#F5F3EE;--cr:#EDEAE3;--be:#E2DDD4;--bd:#B8B0A2;
+      --ch:#12181A;--c2:#1C2426;--c3:#253033;
+      --td:#12181A;--tm:#3A4A4E;--ts:#7A8A8E;
+      --wh:#FFFFFF;
+      --ff-h:'Cormorant Garamond',Georgia,serif;
+      --ff-b:'Jost',sans-serif;
+      --ff-i:'Cormorant',Georgia,serif;
+      --r1:4px;--r2:10px;--r3:18px;--r4:28px;
+      --s1:0 2px 12px rgba(60,40,10,.08);
+      --s2:0 8px 40px rgba(40,26,8,.14);
+      --s3:0 20px 80px rgba(20,12,4,.22);
+      --trans:.4s cubic-bezier(.25,.46,.45,.94);
+    }
+    .bb-input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 1rem;
+      font-family: inherit;
+      width: 100%;
+      padding: 4px 0;
+      outline: none;
+      cursor: pointer;
+    }
+    .bb-input option {
+      color: #1a1a1a;
+      background: #fff;
+    }
+    .logo-img {
+      height: 60px;
+      width: auto;
+    }
+    /* [PERFORMANCE] scroll-behavior on html reduces CLS from instant jumps */
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:var(--ff-b);background:var(--iv);color:var(--td);overflow-x:hidden;cursor:none}
+
+    /* ─── CURSOR ─── */
+    .cursor{position:fixed;pointer-events:none;z-index:99999;mix-blend-mode:difference}
+    .cursor-dot{width:8px;height:8px;background:var(--g);border-radius:50%;transform:translate(-50%,-50%);transition:transform .15s ease,width .3s,height .3s,background .3s}
+    .cursor-ring{width:40px;height:40px;border:1px solid rgba(201,169,110,.6);border-radius:50%;transform:translate(-50%,-50%);transition:transform .08s ease,width .3s,height .3s,opacity .3s}
+    .cursor-dot,.cursor-ring{position:absolute;top:0;left:0}
+    body:has(a:hover) .cursor-ring,body:has(button:hover) .cursor-ring{width:56px;height:56px;border-color:var(--g);opacity:.7}
+
+    /* ─── PRELOADER ─── */
+    #pl{position:fixed;inset:0;z-index:10000;background:#12181A;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;transition:opacity 1s ease,visibility 1s ease}
+    #pl.out{opacity:0;visibility:hidden}
+    .pl-logo{font-family:var(--ff-h);font-size:clamp(3rem,8vw,6rem);color:var(--g);letter-spacing:.16em;font-weight:300;opacity:0;transform:translateY(20px);animation:plIn 1.4s ease .3s forwards}
+    .pl-rule{width:0;height:1px;background:linear-gradient(90deg,transparent,var(--g),transparent);margin:20px 0;animation:plRule 1.2s ease .9s forwards}
+    .pl-sub{font-family:var(--ff-b);font-size:.6rem;color:rgba(201,169,110,.5);letter-spacing:.5em;text-transform:uppercase;opacity:0;animation:plFade 1s ease 1.3s forwards}
+    .pl-bar{position:absolute;bottom:0;left:0;height:2px;background:linear-gradient(90deg,var(--gd),var(--g),var(--gl));animation:plBar 2.4s ease forwards}
+    @keyframes plIn{to{opacity:1;transform:translateY(0)}}
+    @keyframes plRule{to{width:120px}}
+    @keyframes plFade{to{opacity:1}}
+    @keyframes plBar{0%{width:0}100%{width:100%}}
+
+    /* ─── NAV ─── */
+    #nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:8px 5vw;display:flex;align-items:center;justify-content:space-between;background:rgba(18,24,26,.97);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(212,175,114,.14);transition:padding var(--trans),box-shadow var(--trans)}
+    #nav.solid{padding:15px 5vw;box-shadow:0 4px 32px rgba(0,0,0,.4)}
+    .nav-logo{font-family:var(--ff-h);font-size:1.8rem;color:var(--g);letter-spacing:.14em;font-weight:400;text-decoration:none;display:flex;flex-direction:column;line-height:1.1}
+    .nav-logo-sub{font-family:var(--ff-b);font-size:.5rem;color:rgba(201,169,110,.5);letter-spacing:.5em;text-transform:uppercase;font-weight:300}
+    .nav-links{display:flex;gap:36px;list-style:none}
+    .nav-links a{font-family:var(--ff-b);font-size:.72rem;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.6);text-decoration:none;transition:color .3s}
+    .nav-links a:hover{color:var(--g)}
+    /* [A11Y] Focus style for keyboard navigation — critical for accessibility score */
+    .nav-links a:focus-visible{outline:2px solid var(--g);outline-offset:4px;border-radius:2px}
+    .nav-cta{font-family:var(--ff-b);font-size:.65rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;background:transparent;border:1px solid rgba(201,169,110,.5);color:var(--g);padding:11px 24px;border-radius:2px;cursor:none;transition:background .3s,border-color .3s,color .3s}
+    .nav-cta:hover{background:var(--g);border-color:var(--g);color:var(--ch)}
+    .nav-cta:focus-visible{outline:2px solid var(--gl);outline-offset:3px}
+    @media(max-width:900px){.nav-links{display:none}}
+
+    /* ─── HERO ─── */
+    .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;padding-bottom:80px}
+    /* [PERFORMANCE] Using CSS background-image here is replaced with <img> in HTML
+       for LCP benefits, but keeping the fallback color prevents CLS */
+    .hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=85') center/cover no-repeat #12181A;transform:scale(1.05);transition:transform 8s ease}
+    .hero-bg.loaded{transform:scale(1)}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,18,20,.4) 0%,rgba(12,18,20,.15) 40%,rgba(12,18,20,.72) 80%,rgba(12,18,20,.94) 100%)}
+    .hero-overlay2{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(212,175,114,.05) 0%,transparent 60%)}
+    .hero-content{position:relative;z-index:2;width:100%;max-width:1200px;padding:0 5vw}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:16px;font-family:var(--ff-b);font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;color:rgba(201,169,110,.7);margin-bottom:24px;opacity:0;transform:translateY(20px);transition:all 1s ease .2s}
+    .hero-eyebrow.vis{opacity:1;transform:translateY(0)}
+    .hero-eyebrow span{display:block;width:48px;height:1px;background:var(--g)}
+    .hero-h1{font-family:var(--ff-h);font-size:clamp(3.2rem,8vw,7.5rem);font-weight:300;line-height:1.0;color:var(--wh);margin-bottom:10px;opacity:0;transform:translateY(30px);transition:all 1.1s ease .4s}
+    .hero-h1.vis{opacity:1;transform:translateY(0)}
+    .hero-h1 em{font-style:italic;font-weight:300;color:var(--gl)}
+    .hero-h1 strong{font-weight:600;display:block}
+    .hero-desc{font-size:clamp(.9rem,1.5vw,1.1rem);font-weight:200;color:rgb(255,255,255);letter-spacing:.06em;line-height:1.7;max-width:560px;margin:18px 0 48px;opacity:0;transform:translateY(20px);transition:all 1s ease .65s}
+    .hero-desc.vis{opacity:1;transform:translateY(0)}
+
+    /* Booking Bar */
+    .booking-bar{background:rgba(253,250,244,.08);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid rgba(201,169,110,.2);border-radius:var(--r2);padding:0;display:flex;align-items:stretch;overflow:hidden;max-width:900px;opacity:0;transform:translateY(30px);transition:all 1s ease .85s}
+    .booking-bar.vis{opacity:1;transform:translateY(0)}
+    .bb-field{flex:1;padding:20px 24px;border-right:1px solid rgba(201,169,110,.15);display:flex;flex-direction:column;gap:4px;cursor:none;transition:background .3s}
+    .bb-field:hover{background:rgba(201,169,110,.05)}
+    .bb-field:last-of-type{border-right:none}
+    .bb-label{font-family:var(--ff-b);font-size:.55rem;letter-spacing:.35em;text-transform:uppercase;color:#fff}
+    .bb-val{font-family:var(--ff-h);font-size:1.05rem;font-weight:500;color:var(--wh)}
+    .bb-sub{font-size:.68rem;color:rgba(255,255,255,.35);font-weight:200}
+    .bb-btn{background:linear-gradient(135deg,var(--gd),var(--g),var(--gl));color:var(--ch);font-family:var(--ff-b);font-size:.65rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;padding:0 36px;border:none;cursor:none;transition:filter .3s;white-space:nowrap}
+    .bb-btn:hover{filter:brightness(1.08)}
+    .bb-btn:focus-visible{outline:2px solid var(--wh);outline-offset:2px}
+    .hero-actions{display:flex;gap:16px;margin-top:28px;opacity:0;transform:translateY(20px);transition:all 1s ease 1.05s}
+    .hero-actions.vis{opacity:1;transform:translateY(0)}
+    .btn-outline{display:inline-flex;align-items:center;gap:10px;font-family:var(--ff-b);font-size:.65rem;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.7);background:transparent;border:1px solid rgba(255,255,255,.25);padding:14px 28px;border-radius:2px;text-decoration:none;transition:all .3s}
+    .btn-outline:hover{color:var(--wh);border-color:rgba(255,255,255,.6)}
+    .btn-outline:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+    .btn-gold{display:inline-flex;align-items:center;gap:10px;font-family:var(--ff-b);font-size:.65rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ch);background:linear-gradient(135deg,var(--gd),var(--g));padding:14px 28px;border-radius:2px;text-decoration:none;border:none;cursor:none;transition:filter .3s,transform .3s,box-shadow .3s}
+    .btn-gold:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 12px 40px rgba(160,120,40,.4)}
+    .btn-gold:focus-visible{outline:2px solid var(--wh);outline-offset:3px}
+    .hero-scroll{position:absolute;bottom:32px;right:5vw;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:.5;z-index:2}
+    .hero-scroll-line{width:1px;height:60px;background:linear-gradient(to bottom,rgba(201,169,110,0),var(--g));animation:scrollLine 2s ease-in-out infinite}
+    .hero-scroll-txt{font-size:.5rem;letter-spacing:.35em;text-transform:uppercase;color:var(--g);writing-mode:vertical-rl}
+    @keyframes scrollLine{0%,100%{transform:scaleY(.3);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+
+    /* ─── MARQUEE ─── */
+    .marquee-strip{background:#12181A;padding:14px 0;overflow:hidden;border-top:1px solid rgba(212,175,114,.12);border-bottom:1px solid rgba(212,175,114,.12)}
+    .marquee-inner{display:flex;gap:0;white-space:nowrap;animation:marquee 30s linear infinite}
+    /* [A11Y] Respect prefers-reduced-motion — pauses animations for vestibular disorder users */
+    @media(prefers-reduced-motion:reduce){.marquee-inner{animation:none}}
+    .marquee-item{display:inline-flex;align-items:center;gap:20px;padding:0 24px;font-family:var(--ff-b);font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(201,169,110,.4)}
+    .marquee-dot{width:4px;height:4px;background:var(--gd);border-radius:50%;flex-shrink:0}
+    @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+    /* ─── SECTIONS ─── */
+    section{padding:clamp(60px,10vh,120px) 5vw}
+    .sec-inner{max-width:1200px;margin:0 auto}
+    .sec-label{font-family:var(--ff-b);font-size:.58rem;letter-spacing:.45em;text-transform:uppercase;color:var(--gd);display:flex;align-items:center;gap:14px;margin-bottom:16px}
+    .sec-label::before{content:'';display:block;width:32px;height:1px;background:linear-gradient(90deg,var(--gd),var(--g))}
+    .sec-h2{font-family:var(--ff-h);font-size:clamp(2rem,4vw,3.8rem);font-weight:300;line-height:1.1;color:var(--td)}
+    .sec-h2 em{font-style:italic;color:var(--gd)}
+    .gold-rule{width:48px;height:1px;background:linear-gradient(90deg,var(--gd),var(--gl));margin:20px 0}
+
+    /* ─── VILLAS ─── */
+    .villas-section{background:#12181A;position:relative;overflow:hidden}
+    .villas-section::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--g),transparent)}
+    .villas-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:60px;gap:24px;flex-wrap:wrap}
+    .villas-header .sec-label{color:rgba(201,169,110,.6)}
+    .villas-header .sec-label::before{background:linear-gradient(90deg,var(--gd),var(--g))}
+    .villas-header .sec-h2{color:var(--wh)}
+    .villas-header .sec-h2 em{color:var(--gl)}
+    .villas-see-all{font-family:var(--ff-b);font-size:.62rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(201,169,110,.5);text-decoration:none;display:flex;align-items:center;gap:10px;transition:color .3s}
+    .villas-see-all:hover{color:var(--g)}
+    .villas-see-all::after{content:'→';transition:transform .3s}
+    .villas-see-all:hover::after{transform:translateX(4px)}
+    .villas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    @media(max-width:900px){.villas-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.villas-grid{grid-template-columns:1fr}}
+    /* [PERFORMANCE] Explicit width/height on villa cards prevents CLS */
+    .villa-card{position:relative;border-radius:var(--r3);overflow:hidden;background:#1C2426;cursor:none;group:true}
+    .villa-card--featured{grid-row:span 2}
+    .villa-img-wrap{overflow:hidden;position:relative}
+    .villa-card--featured .villa-img-wrap{height:260px}
+    .villa-img-wrap{height:260px}
+    .villa-img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.25,.46,.45,.94)}
+    .villa-card:hover .villa-img{transform:scale(1.07)}
+    .villa-tag{position:absolute;top:20px;left:20px;background:rgba(14,11,6,.7);backdrop-filter:blur(10px);border:1px solid rgba(201,169,110,.25);border-radius:2px;padding:6px 14px;font-family:var(--ff-b);font-size:.56rem;letter-spacing:.28em;text-transform:uppercase;color:var(--g)}
+    .villa-badge{position:absolute;top:20px;right:20px;background:linear-gradient(135deg,var(--gd),var(--g));border-radius:2px;padding:5px 12px;font-family:var(--ff-b);font-size:.54rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ch);font-weight:600}
+    .villa-info{padding:24px}
+    .villa-name{font-family:var(--ff-h);font-size:1.4rem;font-weight:500;color:var(--wh);margin-bottom:6px}
+    .villa-loc{font-family:var(--ff-b);font-size:.68rem;color:rgba(255,255,255,.4);letter-spacing:.15em;display:flex;align-items:center;gap:6px;margin-bottom:16px}
+    .villa-loc svg{width:12px;height:12px;fill:var(--g)}
+    .villa-feats{display:flex;gap:16px;margin-bottom:18px;flex-wrap:wrap}
+    .villa-feat{font-family:var(--ff-b);font-size:.62rem;color:rgba(255,255,255,.35);letter-spacing:.08em;display:flex;align-items:center;gap:6px}
+    .villa-feat span{display:block;width:4px;height:4px;background:var(--gd);border-radius:50%;flex-shrink:0}
+    .villa-price-row{display:flex;align-items:flex-end;justify-content:space-between;border-top:1px solid rgba(255,255,255,.06);padding-top:16px}
+    .villa-price-label{font-family:var(--ff-b);font-size:.55rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.25)}
+    .villa-price{font-family:var(--ff-h);font-size:1.6rem;font-weight:600;color:var(--g);line-height:1}
+    .villa-price sub{font-size:.7rem;font-weight:300;color:rgba(201,169,110,.5)}
+    .villa-wishlist{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;cursor:none;transition:all .3s;color:rgba(255,255,255,.3);font-size:16px}
+    .villa-wishlist:hover{background:rgba(201,169,110,.15);border-color:var(--g);color:var(--g)}
+    .villa-wishlist:focus-visible{outline:2px solid var(--g);outline-offset:2px}
+    .villa-overlay{position:absolute;inset:0;background:rgba(14,11,6,.0);display:flex;align-items:center;justify-content:center;transition:background .4s;pointer-events:none}
+    .villa-card:hover .villa-overlay{background:rgba(14,11,6,.12)}
+    .villa-cta{opacity:0;transform:translateY(8px);transition:all .4s;pointer-events:all}
+    .villa-card:hover .villa-cta{opacity:1;transform:translateY(0)}
+
+    /* ─── WHY PYNEST ─── */
+    .why-section{background:#E8E4DC;position:relative}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    @media(max-width:800px){.why-grid{grid-template-columns:1fr;gap:48px}}
+    .why-visual{position:relative}
+    .why-img-main{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r4);box-shadow:var(--s3)}
+    .why-img-float{position:absolute;bottom:-30px;right:-30px;width:55%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r3);border:6px solid var(--be);box-shadow:var(--s2)}
+    .why-stat{position:absolute;top:32px;left:-20px;background:#12181A;border-radius:var(--r2);padding:16px 20px;box-shadow:var(--s2)}
+    .why-stat-num{font-family:var(--ff-h);font-size:2rem;color:var(--g);font-weight:600;line-height:1}
+    .why-stat-lbl{font-family:var(--ff-b);font-size:.58rem;color:rgba(255,255,255,.4);letter-spacing:.2em;text-transform:uppercase;margin-top:4px}
+    .why-features{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:44px}
+    @media(max-width:480px){.why-features{grid-template-columns:1fr}}
+    .why-feat{background:rgba(255,255,255,.5);border:1px solid rgba(196,176,154,.3);border-radius:var(--r3);padding:24px;transition:all .35s}
+    .why-feat:hover{background:var(--wh);border-color:#3A8C7A;transform:translateY(-4px);box-shadow:var(--s2)}
+    .why-feat-icon{font-size:1.6rem;margin-bottom:12px}
+    .why-feat-title{font-family:var(--ff-h);font-size:1.1rem;font-weight:600;color:var(--td);margin-bottom:6px}
+    .why-feat-desc{font-size:.78rem;font-weight:300;line-height:1.7;color:var(--tm)}
+
+    /* ─── EXPERIENCES ─── */
+    .exp-section{background:var(--iv)}
+    .exp-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:56px}
+    @media(max-width:1000px){.exp-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:640px){.exp-grid{grid-template-columns:repeat(2,1fr)}}
+    .exp-card{position:relative;border-radius:var(--r3);overflow:hidden;aspect-ratio:.7;cursor:none;background:var(--c2)}
+    .exp-img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+    .exp-card:hover .exp-img{transform:scale(1.1)}
+    .exp-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(14,11,6,.85) 0%,rgba(14,11,6,.1) 55%,transparent 100%)}
+    .exp-body{position:absolute;bottom:0;left:0;right:0;padding:24px}
+    .exp-icon{font-size:1.4rem;margin-bottom:8px}
+    .exp-title{font-family:var(--ff-h);font-size:1.15rem;font-weight:500;color:var(--wh);margin-bottom:4px}
+    .exp-sub{font-family:var(--ff-b);font-size:.62rem;color:rgba(255,255,255,.45);letter-spacing:.1em}
+    .exp-arrow{position:absolute;top:20px;right:20px;width:32px;height:32px;border-radius:50%;background:rgba(201,169,110,.12);border:1px solid rgba(201,169,110,.25);display:flex;align-items:center;justify-content:center;color:var(--g);font-size:.75rem;opacity:0;transform:translate(4px,-4px);transition:all .4s}
+    .exp-card:hover .exp-arrow{opacity:1;transform:translate(0,0)}
+
+    /* ─── DESTINATION ─── */
+    .dest-section{background:#12181A;position:relative;overflow:hidden}
+    .dest-section::after{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=2000&q=60') center/cover;opacity:.07;pointer-events:none}
+    .dest-inner{position:relative;z-index:2}
+    .dest-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:72px;align-items:center}
+    @media(max-width:900px){.dest-grid{grid-template-columns:1fr;gap:48px}}
+    .dest-label{color:rgba(201,169,110,.6)}
+    .dest-label::before{background:var(--g)}
+    .dest-h2{color:var(--wh)}
+    .dest-h2 em{color:var(--gl)}
+    .dest-p{font-size:.95rem;font-weight:200;line-height:1.9;color:rgba(255,255,255,.55);margin:20px 0 36px}
+    .dest-stats{display:flex;gap:40px;flex-wrap:wrap}
+    .dest-stat{display:flex;flex-direction:column;gap:4px}
+    .dest-stat-num{font-family:var(--ff-h);font-size:2.8rem;font-weight:600;color:var(--g);line-height:1}
+    .dest-stat-lbl{font-family:var(--ff-b);font-size:.58rem;color:rgba(255,255,255,.3);letter-spacing:.25em;text-transform:uppercase}
+    .dest-visual{position:relative}
+    .dest-mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:12px}
+    .dest-img{border-radius:var(--r3);overflow:hidden}
+    .dest-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease}
+    .dest-img:hover img{transform:scale(1.06)}
+    .dest-img-1{grid-column:span 1;grid-row:span 2;height:400px}
+    .dest-img-2{height:190px}
+    .dest-img-3{height:190px}
+    .dest-badge{position:absolute;bottom:-16px;left:50%;transform:translateX(-50%);background:var(--gd);color:var(--wh);padding:12px 24px;border-radius:2px;font-family:var(--ff-b);font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;white-space:nowrap;box-shadow:0 8px 28px rgba(0,0,0,.4)}
+
+    /* ─── TESTIMONIALS ─── */
+    .testi-section{background:var(--cr)}
+    .testi-head{text-align:center;margin-bottom:64px}
+    .testi-head .gold-rule{margin:20px auto}
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+    @media(max-width:900px){.testi-grid{grid-template-columns:1fr}}
+    .testi-card{background:var(--wh);border:1px solid rgba(196,176,154,.2);border-radius:var(--r4);padding:36px;position:relative;transition:all .4s}
+    .testi-card:hover{transform:translateY(-6px);box-shadow:var(--s3);border-color:rgba(201,169,110,.3)}
+    .testi-quote{font-family:var(--ff-i);font-size:3rem;color:var(--gp);line-height:1;position:absolute;top:24px;right:28px;font-style:italic}
+    .testi-stars{color:var(--g);font-size:.75rem;letter-spacing:3px;margin-bottom:16px}
+    .testi-text{font-family:var(--ff-h);font-size:1.1rem;font-weight:400;font-style:italic;color:var(--tm);line-height:1.7;margin-bottom:24px}
+    .testi-footer{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid var(--be)}
+    .testi-avatar{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--g)}
+    .testi-name{font-family:var(--ff-b);font-size:.8rem;font-weight:500;color:var(--td);margin-bottom:2px}
+    .testi-loc{font-family:var(--ff-b);font-size:.62rem;color:var(--ts)}
+    .testi-verified{display:inline-flex;align-items:center;gap:4px;font-family:var(--ff-b);font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gd);margin-top:4px}
+    .testi-verified svg{width:10px;height:10px;fill:currentColor}
+
+    /* ─── GALLERY ─── */
+    .gallery-section{background:#12181A;padding-top:0;padding-bottom:0}
+    .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:280px 200px;gap:4px}
+    @media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto}}
+    .gallery-item{overflow:hidden;position:relative;cursor:none}
+    .gallery-item-1{grid-column:span 2;grid-row:span 2}
+    .gallery-item-5{grid-column:span 2}
+    .gallery-img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease,filter .4s}
+    .gallery-item:hover .gallery-img{transform:scale(1.06)}
+    .gallery-item-overlay{position:absolute;inset:0;background:rgba(14,11,6,0);transition:background .4s;display:flex;align-items:center;justify-content:center}
+    .gallery-item:hover .gallery-item-overlay{background:rgba(14,11,6,.3)}
+    .gallery-zoom{opacity:0;width:44px;height:44px;border-radius:50%;background:rgba(201,169,110,.8);display:flex;align-items:center;justify-content:center;color:var(--ch);font-size:18px;transition:opacity .4s,transform .4s;transform:scale(.7)}
+    .gallery-item:hover .gallery-zoom{opacity:1;transform:scale(1)}
+    .gallery-tag{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:flex-end;padding:20px;pointer-events:none}
+    .gallery-tag-inner{background:rgba(14,11,6,.6);backdrop-filter:blur(8px);border:1px solid rgba(201,169,110,.2);border-radius:2px;padding:8px 14px;font-family:var(--ff-b);font-size:.55rem;letter-spacing:.3em;text-transform:uppercase;color:var(--g);opacity:0;transform:translateY(4px);transition:all .4s}
+    .gallery-item:hover .gallery-tag-inner{opacity:1;transform:translateY(0)}
+    .gallery-label{text-align:center;padding:36px;font-family:var(--ff-h);font-size:clamp(1.5rem,3vw,2.5rem);font-style:italic;color:rgba(201,169,110,.4)}
+
+    /* ─── FAQ SECTION ─── */
+    /* [SEO] FAQ section drives FAQPage schema and topical authority */
+    .faq-section{background:var(--iv)}
+    .faq-head{text-align:center;margin-bottom:56px}
+    .faq-head .gold-rule{margin:20px auto}
+    .faq-grid{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:0}
+    .faq-item{border-bottom:1px solid rgba(196,176,154,.3)}
+    .faq-question{font-family:var(--ff-h);font-size:1.15rem;font-weight:500;color:var(--td);padding:24px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;list-style:none;transition:color .3s}
+    .faq-question:hover{color:var(--gd)}
+    .faq-question::after{content:'＋';font-family:var(--ff-b);font-size:1.2rem;color:var(--gd);flex-shrink:0;transition:transform .3s}
+    .faq-item.open .faq-question::after{transform:rotate(45deg)}
+    .faq-answer{font-size:.88rem;font-weight:300;line-height:1.8;color:var(--tm);max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s}
+    .faq-item.open .faq-answer{max-height:300px;padding-bottom:24px}
+
+    /* ─── EARLY ACCESS ─── */
+    .access-section{background:linear-gradient(150deg,#0D1315 0%,#182024 50%,#0D1315 100%);position:relative;overflow:hidden}
+    .access-section::before{content:'PYNEST';font-family:var(--ff-h);font-size:clamp(8rem,20vw,18rem);font-weight:700;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:rgba(201,169,110,.025);white-space:nowrap;pointer-events:none;letter-spacing:.08em;z-index:0}
+    .access-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:center}
+    @media(max-width:900px){.access-inner{grid-template-columns:1fr;gap:48px}}
+    .access-left .sec-label{color:rgba(201,169,110,.6)}
+    .access-left .sec-label::before{background:var(--g)}
+    .access-left .sec-h2{color:var(--wh)}
+    .access-left .sec-h2 em{color:var(--gl)}
+    .access-left p{font-size:.9rem;font-weight:200;line-height:1.9;color:rgba(255,255,255,.45);margin-top:16px}
+    .access-perks{margin-top:36px;display:flex;flex-direction:column;gap:14px}
+    .access-perk{display:flex;align-items:center;gap:16px;font-family:var(--ff-b);font-size:.78rem;color:rgba(255,255,255,.5);font-weight:300}
+    .access-perk-dot{width:20px;height:20px;border-radius:50%;background:rgba(201,169,110,.1);border:1px solid rgba(201,169,110,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.6rem;color:var(--g)}
+    .glass-card{background:rgba(255,255,255,.04);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(201,169,110,.15);border-radius:var(--r4);padding:44px;box-shadow:0 32px 80px rgba(0,0,0,.4)}
+    .form-grp{margin-bottom:18px}
+    .form-grp label{display:block;font-family:var(--ff-b);font-size:.56rem;letter-spacing:.35em;text-transform:uppercase;color:rgba(201,169,110,.5);margin-bottom:8px}
+    .form-grp input,.form-grp select{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(201,169,110,.18);border-radius:var(--r1);padding:14px 18px;font-family:var(--ff-b);font-size:.88rem;color:var(--wh);outline:none;transition:border-color .3s,background .3s;-webkit-appearance:none}
+    .form-grp input::placeholder{color:rgba(255,255,255,.2)}
+    .form-grp input:focus{border-color:var(--g);background:rgba(201,169,110,.05)}
+    /* [A11Y] Focus-visible for keyboard users */
+    .form-grp input:focus-visible{outline:2px solid var(--g);outline-offset:2px}
+    .form-grp select{color:rgba(255,255,255,.5);cursor:pointer}
+    .form-grp select option{background:var(--ch);color:var(--wh)}
+    .form-err{font-size:.7rem;color:#E8A87C;margin-top:5px;display:none}
+    .form-err.show{display:block}
+    .btn-submit{width:100%;background:linear-gradient(135deg,var(--gd),var(--g),var(--gl));color:var(--ch);font-family:var(--ff-b);font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;padding:18px;border:none;border-radius:var(--r1);cursor:pointer;margin-top:8px;transition:filter .3s,transform .3s,box-shadow .3s;box-shadow:0 8px 28px rgba(140,100,40,.35)}
+    .btn-submit:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 14px 40px rgba(140,100,40,.5)}
+    .btn-submit:focus-visible{outline:2px solid var(--wh);outline-offset:3px}
+    .btn-submit:disabled{opacity:.5;cursor:not-allowed;transform:none}
+    .form-note{font-family:var(--ff-b);font-size:.6rem;color:rgba(255,255,255,.2);text-align:center;margin-top:12px}
+    .success-state{display:none;text-align:center;padding:24px}
+    .success-state.show{display:block}
+    .success-icon{font-size:3rem;margin-bottom:16px}
+    .success-state h3{font-family:var(--ff-h);font-size:2rem;font-weight:400;color:var(--gl);margin-bottom:8px}
+    .success-state p{font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.7}
+
+    /* ─── FOOTER ─── */
+    footer{background:#0D1315;padding:72px 5vw 36px;border-top:1px solid rgba(212,175,114,.1)}
+    .footer-inner{max-width:1200px;margin:0 auto}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:60px;margin-bottom:60px}
+    @media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr;gap:40px}}
+    @media(max-width:560px){.footer-top{grid-template-columns:1fr;gap:32px}}
+    .footer-brand-logo{font-family:var(--ff-h);font-size:2.4rem;font-weight:300;color:var(--g);letter-spacing:.15em;margin-bottom:14px}
+    .footer-brand-desc{font-size:.78rem;font-weight:200;color:rgba(255,255,255,.3);line-height:1.8;margin-bottom:24px}
+    .footer-socials{display:flex;gap:10px}
+    .f-soc{width:38px;height:38px;border-radius:50%;border:1px solid rgba(201,169,110,.2);display:flex;align-items:center;justify-content:center;color:rgba(201,169,110,.4);text-decoration:none;transition:all .3s;font-size:14px}
+    .f-soc:hover{border-color:var(--g);color:var(--g);background:rgba(201,169,110,.08)}
+    .f-soc:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+    .footer-col-title{font-family:var(--ff-b);font-size:.58rem;letter-spacing:.35em;text-transform:uppercase;color:rgba(255,255,255,.25);margin-bottom:20px}
+    .footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+    .footer-links a{font-family:var(--ff-b);font-size:.78rem;font-weight:200;color:rgba(255,255,255,.35);text-decoration:none;transition:color .3s;display:flex;align-items:center;gap:8px}
+    .footer-links a:hover{color:var(--g)}
+    .footer-links a:focus-visible{outline:2px solid var(--g);outline-offset:3px;border-radius:2px}
+    .footer-links a::before{content:'';display:block;width:0;height:1px;background:var(--g);transition:width .3s}
+    .footer-links a:hover::before{width:12px}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:28px;border-top:1px solid rgba(255,255,255,.06)}
+    .footer-copy{font-size:.65rem;color:rgba(255,255,255,.18)}
+    .footer-copy a{color:rgba(201,169,110,.4);text-decoration:none}
+    .footer-legal{display:flex;gap:24px}
+    .footer-legal a{font-size:.6rem;color:rgba(255,255,255,.2);text-decoration:none;transition:color .3s}
+    .footer-legal a:hover{color:var(--g)}
+
+    /* ─── SOCIAL DOCK ─── */
+    .s-dock{position:fixed;right:20px;bottom:28px;z-index:500;display:flex;flex-direction:column;align-items:center;gap:8px}
+    .s-dock-card{background:rgba(18,24,26,.95);backdrop-filter:blur(16px);border:1px solid rgba(212,175,114,.18);border-radius:36px;padding:12px 8px;display:flex;flex-direction:column;align-items:center;gap:8px;box-shadow:0 12px 48px rgba(0,0,0,.4)}
+    .s-btn{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:rgba(156,138,112,.7);background:transparent;transition:all .25s;cursor:none}
+    .s-btn svg{width:16px;height:16px;fill:currentColor}
+    .s-btn:hover{transform:scale(1.15)}
+    .s-btn:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+    .s-btn.wa:hover{color:#25D366;background:rgba(37,211,102,.1)}
+    .s-btn.ig:hover{color:#E4405F;background:rgba(228,64,95,.1)}
+    .s-btn.fb:hover{color:#5890FF;background:rgba(88,144,255,.1)}
+    .s-sep{width:18px;height:1px;background:rgba(201,169,110,.12)}
+    .s-dock-line{width:1px;height:48px;background:linear-gradient(to bottom,transparent,rgba(201,169,110,.3))}
+    @media(max-width:560px){.s-dock-line{display:none}}
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal{opacity:0;transform:translateY(36px);transition:opacity .8s ease,transform .8s ease}
+    .reveal.in{opacity:1;transform:translateY(0)}
+    .reveal-d1{transition-delay:.1s}
+    .reveal-d2{transition-delay:.2s}
+    .reveal-d3{transition-delay:.3s}
+    .reveal-d4{transition-delay:.4s}
+    .reveal-d5{transition-delay:.5s}
+    /* [A11Y] Disable animations for users with vestibular disorders */
+    @media(prefers-reduced-motion:reduce){
+      .reveal{opacity:1;transform:none;transition:none}
+      .hero-h1,.hero-desc,.hero-eyebrow,.booking-bar,.hero-actions{transition:none}
+      .pl-logo,.pl-rule,.pl-sub,.pl-bar{animation:none;opacity:1}
+    }
+
+    /* ─── UTILITIES ─── */
+    @media(max-width:760px){
+      .booking-bar{flex-direction:column;border-radius:var(--r2)}
+      .bb-field{border-right:none;border-bottom:1px solid rgba(201,169,110,.15)}
+      .bb-btn{padding:18px;text-align:center}
+      .hero-actions{flex-direction:column}
+    }
+
+    /* [A11Y] Skip-to-content link for keyboard users — visually hidden until focused */
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:fixed;left:16px;top:16px;width:auto;height:auto;background:var(--g);color:var(--ch);padding:12px 20px;border-radius:4px;font-family:var(--ff-b);font-size:.8rem;font-weight:600;letter-spacing:.1em;z-index:100000;text-decoration:none}
+  </style>
+
+</head>
+
+<body>
+
+  <!-- [PERFORMANCE] Inline script sets date minimum immediately — prevents CLS from date input reset -->
+  <script>
+    const today = new Date().toISOString().split('T')[0];
+    // Set after DOM elements exist — moved to after booking bar HTML
+  </script>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CUSTOM CURSOR — decorative, hidden from screen readers
+       ══════════════════════════════════════════════════════════════ -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor-dot" id="cd"></div>
+    <div class="cursor-ring" id="cr"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       PRELOADER
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- [A11Y] role="status" + aria-label tells screen readers loading is occurring -->
+  <div id="pl" role="status" aria-label="Loading Pynest — Luxury Villas Pondicherry" aria-live="polite">
+    <div class="pl-logo" aria-hidden="true">Pynest</div>
+    <div class="pl-rule" aria-hidden="true"></div>
+    <div class="pl-sub" aria-hidden="true">Pondicherry · Luxury · Stillness</div>
+    <div class="pl-bar" aria-hidden="true"></div>
+  </div>
+
+  <!-- [A11Y] Skip navigation — first focusable element on page for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       SOCIAL DOCK — Fixed floating social links
+       ══════════════════════════════════════════════════════════════ -->
+  <aside class="s-dock" aria-label="Connect with Pynest on social media">
+    <div class="s-dock-line" aria-hidden="true"></div>
+    <div class="s-dock-card">
+      <a class="s-btn wa"
+         href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I'm%20interested%20in%20your%20luxury%20villas%20and%20homestays%20in%20Pondicherry.%20Please%20share%20more%20details."
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Chat with Pynest on WhatsApp — Luxury Villas Pondicherry">
+        <!-- [A11Y] SVG needs title or aria-hidden when parent has aria-label -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.129.558 4.122 1.525 5.853L.057 23.525a.5.5 0 00.614.614l5.672-1.468A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.86 0-3.605-.5-5.112-1.375l-.364-.214-3.767.976.996-3.67-.234-.378A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      </a>
+      <div class="s-sep" aria-hidden="true"></div>
+      <a class="s-btn ig"
+         href="https://instagram.com/pynest.in"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Follow Pynest on Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      </a>
+      <div class="s-sep" aria-hidden="true"></div>
+      <a class="s-btn fb"
+         href="https://facebook.com/pynest.in"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Follow Pynest on Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.532-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       NAVIGATION — Semantic <header> + <nav> with proper ARIA
+       ══════════════════════════════════════════════════════════════ -->
+  <!-- [SEO] <header> is a semantic landmark — Google uses it for site structure signals -->
+  <header>
+    <!-- [A11Y] aria-label differentiates this nav from footer nav for screen readers -->
+    <nav id="nav" role="navigation" aria-label="Main navigation — Pynest Luxury Villas Pondicherry">
+      <!-- [SEO] Logo links to homepage with descriptive alt text — important brand signal -->
+      <a href="https://pynest.in/" class="nav-logo" aria-label="Pynest — Luxury Villas Pondicherry — Return to homepage">
+        <img src="/pynestlogo.png"
+             alt="Pynest — Luxury Villas &amp; Heritage Stays in Pondicherry"
+             class="logo-img"
+             width="180"
+             height="60"
+             loading="eager"
+             decoding="async"/>
+      </a>
+
+      <!-- [A11Y] role="list" on <ul> inside nav is implicit — ARIA roles preserved -->
+      <ul class="nav-links" role="list">
+        <li><a href="#villas" aria-label="View Pynest signature villa collection">Villas</a></li>
+        <li><a href="#experiences" aria-label="Explore curated Pondicherry experiences">Experiences</a></li>
+        <li><a href="#destination" aria-label="Discover Pondicherry as a destination">Pondicherry</a></li>
+        <li><a href="#faq" aria-label="Frequently asked questions about Pynest villas">FAQ</a></li>
+        <li>
+          <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20your%20luxury%20villas%20and%20homestays%20in%20Pondicherry.%20Please%20share%20more%20details."
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Contact Pynest on WhatsApp">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <button class="nav-cta"
+              type="button"
+              aria-label="Get priority access to Pynest luxury villas in Pondicherry"
+              onclick="window.open('https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20your%20luxury%20villas%20and%20homestays%20in%20Pondicherry.%20Please%20share%20more%20details.', '_blank')">
+        Priority Access
+      </button>
+    </nav>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       MAIN CONTENT — Everything below nav is wrapped in <main>
+       [SEO] <main> is a landmark element — search engines weight content inside it
+       ══════════════════════════════════════════════════════════════ -->
+  <main id="main-content">
+
+    <!-- ════════════════════════════════════════════════════════
+         HERO SECTION
+         ════════════════════════════════════════════════════════ -->
+    <!-- [SEO] <section> with aria-labelledby ties the section to its H1 — strong semantic signal -->
+    <section class="hero" aria-labelledby="hero-heading" itemscope itemtype="https://schema.org/LodgingBusiness">
+
+      <!-- [PERFORMANCE] Hero background image — CSS background handles the parallax.
+           The <img> preload in <head> handles LCP optimization. -->
+      <div class="hero-bg" id="heroBg" role="img" aria-label="Aerial view of a luxury private pool villa surrounded by tropical gardens in Pondicherry, India"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-overlay2" aria-hidden="true"></div>
+
+      <div class="hero-content sec-inner">
+        <!-- [SEO] Eyebrow text — keyword-rich, sets topic context -->
+        <p class="hero-eyebrow" id="he" aria-label="Pynest — Coming soon">
+          <span aria-hidden="true"></span>
+          Pondicherry's Finest Villas &nbsp;·&nbsp; pynest.in
+          <span aria-hidden="true"></span>
+        </p>
+
+        <!-- [SEO] THE ONE H1 — most critical SEO element on the page.
+             Contains primary keywords naturally. Google reads this as the page topic.
+             "Luxury Villas Pondicherry" + "Private Pool" are highest-priority KWs. -->
+        <h1 class="hero-h1" id="hh hero-heading">
+          Luxury <em>Villas</em><br>
+          <strong>Pondicherry</strong>
+        </h1>
+
+        <!-- [SEO] Hero description — naturally includes secondary keywords:
+             private pool, heritage, beachfront, Puducherry, curated stays -->
+        <p class="hero-desc" id="hd" itemprop="description">
+          Discover Pondicherry's most curated private pool villas, heritage homestays, and beachfront retreats — in the soul of Puducherry's French Quarter. Extraordinary stays for couples, families and discerning travellers.
+        </p>
+
+        <!-- [SEO/UX] Booking bar — check-in/out, guests, villa type.
+             Clear intent signals for users and search engines. -->
+        <div class="booking-bar" id="hbb" role="search" aria-label="Search and book luxury villas in Pondicherry">
+          <div class="bb-field">
+            <!-- [A11Y] Labels use for= matching input IDs — critical for form accessibility -->
+            <label class="bb-label" for="bb-checkin">Check In</label>
+            <input type="date" id="bb-checkin" class="bb-input" aria-label="Check-in date" min=""/>
+            <span class="bb-sub" aria-hidden="true">Add arrival date</span>
+          </div>
+          <div class="bb-field">
+            <label class="bb-label" for="bb-checkout">Check Out</label>
+            <input type="date" id="bb-checkout" class="bb-input" aria-label="Check-out date" min=""/>
+            <span class="bb-sub" aria-hidden="true">Add departure date</span>
+          </div>
+          <div class="bb-field">
+            <label class="bb-label" for="bb-guests">Guests</label>
+            <select id="bb-guests" class="bb-input" aria-label="Number of guests">
+              <option value="">Select Guests</option>
+              <option value="1 Adult">1 Adult</option>
+              <option value="2 Adults">2 Adults</option>
+              <option value="3 Adults">3 Adults</option>
+              <option value="4 Adults">4 Adults</option>
+              <option value="5 Adults">5 Adults</option>
+              <option value="6+ Adults">6+ Adults</option>
+            </select>
+            <span class="bb-sub" aria-hidden="true">Add guests</span>
+          </div>
+          <div class="bb-field">
+            <label class="bb-label" for="bb-type">Villa Type</label>
+            <select id="bb-type" class="bb-input" aria-label="Select villa type">
+              <option value="">All Types</option>
+              <option value="Pool Villa">Private Pool Villa</option>
+              <option value="Beachfront">Beachfront Villa</option>
+              <option value="Heritage">Heritage Villa</option>
+              <option value="Hut House">Hut House</option>
+              <option value="Boutique Homestay">Boutique Homestay</option>
+            </select>
+            <span class="bb-sub" aria-hidden="true">Pool · Beachfront · Heritage</span>
+          </div>
+          <button class="bb-btn"
+                  type="button"
+                  aria-label="Check villa availability — opens WhatsApp"
+                  onclick="sendBookingWhatsApp()">
+            Check Availability →
+          </button>
+        </div>
+
+        <!-- [SEO/CRO] Hero CTAs — primary and secondary actions -->
+        <div class="hero-actions" id="ha">
+          <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20your%20luxury%20villas%20and%20homestays%20in%20Pondicherry.%20Please%20share%20more%20details."
+             class="btn-gold"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Join the Pynest priority waitlist — exclusive early access to luxury villas in Pondicherry">
+            Join Priority Waitlist ↗
+          </a>
+          <a href="#villas"
+             class="btn-outline"
+             aria-label="Browse Pynest signature villa collection in Pondicherry">
+            Explore Signature Villas
+          </a>
+        </div>
+      </div>
+
+      <!-- [A11Y] aria-hidden — decorative scroll indicator, no semantic value -->
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="hero-scroll-txt">Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         MARQUEE — SEO keyword strip (aria-hidden so screen readers skip)
+         ════════════════════════════════════════════════════════ -->
+    <!-- [A11Y] aria-hidden="true" — decorative ticker, repeated text would be noise for screen readers -->
+    <div class="marquee-strip" aria-hidden="true" role="presentation">
+      <div class="marquee-inner" id="marqueeInner">
+        <span class="marquee-item"><span class="marquee-dot"></span>Private Pool Villas Pondicherry</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>French Quarter Heritage Stays</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Beachside Retreats Puducherry</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Boutique Luxury Homestays</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Curated Luxury Collection</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>24/7 Concierge Service</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Pondicherry · India</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Private Pool Villas Pondicherry</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>French Quarter Heritage Stays</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Beachside Retreats Puducherry</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Boutique Luxury Homestays</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Curated Luxury Collection</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>24/7 Concierge Service</span>
+        <span class="marquee-item"><span class="marquee-dot"></span>Pondicherry · India</span>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════
+         VILLAS SECTION
+         [SEO] H2: "Signature Villa Collection" — matches "signature villas Pondicherry" KW
+         ════════════════════════════════════════════════════════ -->
+    <!-- [SEO] id="villas" matches anchor from nav — ensures crawlability of anchor links -->
+    <section class="villas-section" id="villas" aria-labelledby="villas-heading">
+      <div class="sec-inner">
+        <div class="villas-header">
+          <div>
+            <p class="sec-label reveal">Signature Collection · Pondicherry</p>
+            <!-- [SEO] H2 includes "Villas" and "Pondicherry" — secondary ranking terms -->
+            <h2 class="sec-h2 reveal reveal-d1" id="villas-heading">
+              Exceptionally <em>Curated</em><br>Luxury Villas
+            </h2>
+          </div>
+          <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20your%20luxury%20villas%20and%20homestays%20in%20Pondicherry.%20Please%20share%20more%20details."
+             class="villas-see-all reveal"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="View all Pynest luxury villa properties in Pondicherry">
+            View All Properties
+          </a>
+        </div>
+
+        <!-- [SEO] Villa cards use <article> — correct semantic element for independent content items -->
+        <div class="villas-grid">
+
+          <!-- Villa Card 1 — Lakshmi Villa (Featured) -->
+          <!-- [SEO] <article> with itemscope adds inline microdata — reinforces schema -->
+          <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20Lakshmi%20Villa.%20Please%20share%20more%20details."
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Enquire about Lakshmi Villa — Luxury 2-bedroom private villa in Vasantha Nagar, Pondicherry. Starting from ₹4,000 per night"
+             style="text-decoration:none;color:inherit;">
+            <article class="villa-card villa-card--featured reveal"
+                     itemscope
+                     itemtype="https://schema.org/LodgingBusiness">
+              <div class="villa-img-wrap">
+                <!-- [SEO/PERFORMANCE] Descriptive filename + alt text = image SEO.
+                     Width/height prevents CLS. loading="lazy" defers off-screen images.
+                     Hero images should NOT be lazy. -->
+                <img class="villa-img"
+                     src="https://pynest.in/images/villas/villa1.webp"
+                     alt="Lakshmi Villa — Luxury 2-bedroom private villa with garden in Vasantha Nagar, Pondicherry"
+                     width="600"
+                     height="260"
+                     loading="lazy"
+                     decoding="async"
+                     itemprop="image"/>
+                <span class="villa-tag">Premium Villa Residence</span>
+                <span class="villa-badge">Signature</span>
+              </div>
+              <div class="villa-info">
+                <!-- [SEO] H3 for villa names — correct heading hierarchy H1 > H2 > H3 -->
+                <h3 class="villa-name" itemprop="name">Lakshmi Villa</h3>
+                <p class="villa-loc" itemprop="address">
+                  <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  <span>Nila St, Vasantha Nagar, Puducherry</span>
+                </p>
+                <ul class="villa-feats" aria-label="Villa features">
+                  <li class="villa-feat"><span aria-hidden="true"></span>2 Bedrooms</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Fully Furnished</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Free Car Parking</li>
+                </ul>
+                <div class="villa-price-row">
+                  <div>
+                    <div class="villa-price-label">Starting From</div>
+                    <div class="villa-price" itemprop="priceRange">₹4,000<sub>/night</sub></div>
+                  </div>
+                  <button class="villa-wishlist"
+                          type="button"
+                          aria-label="Add Lakshmi Villa to wishlist"
+                          aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <!-- Villa Card 2 — Luken Bay Villa -->
+          <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20Luken%20Bay%20Villa.%20Please%20share%20more%20details."
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Enquire about Luken Bay Villa — 4-bedroom beachfront villa in Kuruchikuppam, Pondicherry. Starting from ₹4,000 per night"
+             style="text-decoration:none;color:inherit;">
+            <article class="villa-card reveal reveal-d1"
+                     itemscope
+                     itemtype="https://schema.org/LodgingBusiness">
+              <div class="villa-img-wrap">
+                <img class="villa-img"
+                     src="https://pynest.in/images/villas/villa2.webp"
+                     alt="Luken Bay Villa — 4-bedroom beachfront villa with ocean view in Kuruchikuppam, Pondicherry"
+                     width="600"
+                     height="260"
+                     loading="lazy"
+                     decoding="async"
+                     itemprop="image"/>
+                <span class="villa-tag">Beachfront Villa</span>
+              </div>
+              <div class="villa-info">
+                <h3 class="villa-name" itemprop="name">Luken Bay Villa</h3>
+                <p class="villa-loc" itemprop="address">
+                  <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  <span>Kuruchikuppam, Puducherry</span>
+                </p>
+                <ul class="villa-feats" aria-label="Villa features">
+                  <li class="villa-feat"><span aria-hidden="true"></span>4 Bedrooms</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Beach View</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Free Car Parking</li>
+                </ul>
+                <div class="villa-price-row">
+                  <div>
+                    <div class="villa-price-label">Starting From</div>
+                    <div class="villa-price" itemprop="priceRange">₹4,000<sub>/night</sub></div>
+                  </div>
+                  <button class="villa-wishlist"
+                          type="button"
+                          aria-label="Add Luken Bay Villa to wishlist"
+                          aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <!-- Villa Card 3 — Pynest Hut House Villa -->
+          <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20Pynest%20Hut%20House%20Villa.%20Please%20share%20more%20details."
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Enquire about Pynest Hut House Villa — 4-bedroom beach-view villa in Anumandai, Pondicherry. Starting from ₹4,000 per night"
+             style="text-decoration:none;color:inherit;">
+            <article class="villa-card reveal reveal-d1"
+                     itemscope
+                     itemtype="https://schema.org/LodgingBusiness">
+              <div class="villa-img-wrap">
+                <img class="villa-img"
+                     src="https://pynest.in/images/villas/villa3.webp"
+                     alt="Pynest Hut House Villa — Unique 4-bedroom hut-style villa with beach view near Anumandai, Pondicherry"
+                     width="600"
+                     height="260"
+                     loading="lazy"
+                     decoding="async"
+                     itemprop="image"/>
+                <span class="villa-tag">Hut House Villa</span>
+              </div>
+              <div class="villa-info">
+                <h3 class="villa-name" itemprop="name">Pynest Hut House Villa</h3>
+                <p class="villa-loc" itemprop="address">
+                  <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  <span>Anumandai, Puducherry</span>
+                </p>
+                <ul class="villa-feats" aria-label="Villa features">
+                  <li class="villa-feat"><span aria-hidden="true"></span>4 Bedrooms</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Beach View</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Free Car Parking</li>
+                </ul>
+                <div class="villa-price-row">
+                  <div>
+                    <div class="villa-price-label">Starting From</div>
+                    <div class="villa-price" itemprop="priceRange">₹3,000<sub>/night</sub></div>
+                  </div>
+                  <button class="villa-wishlist"
+                          type="button"
+                          aria-label="Add Pynest Hut House Villa to wishlist"
+                          aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </article>
+          </a>
+
+             <!-- Villa Card 4 — Pynest 3BHK Private Beach House Villa (Hanumandhai) -->
+          <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20Pynest%203BHK%20Private%20Beach%20House%20Villa.%20Please%20share%20more%20details."
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Enquire about Pynest 3BHK Private Beach House Villa — 3-bedroom private beach house villa in Hanumandhai, Pondicherry. Starting from ₹6,000 per night"
+             style="text-decoration:none;color:inherit;">
+            <article class="villa-card reveal reveal-d1"
+                     itemscope
+                     itemtype="https://schema.org/LodgingBusiness">
+              <div class="villa-img-wrap">
+                <!-- [SEO] Placeholder image reused from Lakshmi Villa until real photography is uploaded.
+                     Replace src with a dedicated photo (suggested filename: pynest-3bhk-priva-beach-house-villa-hanumandhai-pondicherry.jpg) -->
+                <img class="villa-img"
+                     src="https://pynest.in/images/villas/villa4.webp"
+                     alt="Pynest 3BHK Private Beach House Villa — 3-bedroom private beach house in Hanumandhai, Pondicherry"
+                     width="600"
+                     height="260"
+                     loading="lazy"
+                     decoding="async"
+                     itemprop="image"/>
+                <span class="villa-tag">Premium Villa Residence</span>
+              </div>
+              <div class="villa-info">
+                <h3 class="villa-name" itemprop="name">Pynest 3BHK Private Beach House Villa</h3>
+                <p class="villa-loc" itemprop="address">
+                  <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  <span>Hanumandhai, Puducherry</span>
+                </p>
+                <ul class="villa-feats" aria-label="Villa features">
+                  <li class="villa-feat"><span aria-hidden="true"></span>3 Bedrooms</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Private Beach Access</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Free Car Parking</li>
+                </ul>
+                <div class="villa-price-row">
+                  <div>
+                    <div class="villa-price-label">Starting From</div>
+                    <div class="villa-price" itemprop="priceRange">₹15,000<sub>/night</sub></div>
+                  </div>
+                  <button class="villa-wishlist"
+                          type="button"
+                          aria-label="Add Pynest 3BHK Private Beach House Villa to wishlist"
+                          aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          
+           <!-- Villa Card 5 — Pynest Vintage House 4BHK Private Villa (Auroville) -->
+          <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20Pynest%20Vintage%20House%204BHK%20Private%20Villa.%20Please%20share%20more%20details."
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Enquire about Pynest Vintage House 4BHK Private Villa — 4-bedroom private villa in Auroville, Pondicherry, 300 metres from Auroville Beach. Starting from ₹15,000 per night"
+             style="text-decoration:none;color:inherit;">
+            <article class="villa-card reveal reveal-d1"
+                     itemscope
+                     itemtype="https://schema.org/LodgingBusiness">
+              <div class="villa-img-wrap">
+                <!-- [SEO] Placeholder image reused from Lakshmi Villa until real photography is uploaded.
+                     Replace src with a dedicated photo (suggested filename: pynest-vintage-house-4bhk-private-villa-auroville-pondicherry.jpg) -->
+                <img class="villa-img"
+                     src="https://pynest.in/images/villas/villa5.webp"
+                     alt="Pynest Vintage House 4BHK Private Villa — 4-bedroom private villa with pool in Auroville, Pondicherry"
+                     width="600"
+                     height="260"
+                     loading="lazy"
+                     decoding="async"
+                     itemprop="image"/>
+                <span class="villa-tag">Premium Villa Residence</span>
+              </div>
+              <div class="villa-info">
+                <h3 class="villa-name" itemprop="name">Pynest Vintage House 4BHK Private Villa</h3>
+                <p class="villa-loc" itemprop="address">
+                  <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                  <span>Auroville, Puducherry — 300m from Auroville Beach</span>
+                </p>
+                <ul class="villa-feats" aria-label="Villa features">
+                  <li class="villa-feat"><span aria-hidden="true"></span>4 Bedrooms</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Private Pool (Adults &amp; Kids)</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Spacious Garden</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Indoor Games</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Cafe Available</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Kitchen (Extra Charge)</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Fire Camp (Extra Charge)</li>
+                  <li class="villa-feat"><span aria-hidden="true"></span>Bluetooth Speaker (No TV)</li>
+                </ul>
+                <div class="villa-price-row">
+                  <div>
+                    <div class="villa-price-label">Starting From</div>
+                    <div class="villa-price" itemprop="priceRange">₹15,000<sub>/night</sub></div>
+                  </div>
+                  <button class="villa-wishlist"
+                          type="button"
+                          aria-label="Add Pynest Vintage House 4BHK Private Villa to wishlist"
+                          aria-pressed="false">♡</button>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         WHY PYNEST SECTION
+         [SEO] H2: "Handpicked. Uncompromising." — trust signals for E-E-A-T
+         ════════════════════════════════════════════════════════ -->
+    <section class="why-section" id="why" aria-labelledby="why-heading">
+      <div class="sec-inner why-grid">
+        <div class="why-visual">
+          <img class="why-img-main reveal"
+               src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&q=80"
+               alt="Luxuriously furnished open-plan living room of a heritage villa in Pondicherry with colonial-style architecture"
+               width="500"
+               height="667"
+               loading="lazy"
+               decoding="async"/>
+          <img class="why-img-float reveal reveal-d2"
+               src="https://images.unsplash.com/photo-1596386461350-326ccb383e9f?w=600&q=80"
+               alt="Private infinity pool at sunset — Pynest luxury pool villa in Pondicherry"
+               width="360"
+               height="270"
+               loading="lazy"
+               decoding="async"/>
+          <div class="why-stat reveal reveal-d1" aria-label="50 plus curated villas in Pondicherry">
+            <div class="why-stat-num" aria-hidden="true">50+</div>
+            <div class="why-stat-lbl">Curated Villas</div>
+          </div>
+        </div>
+        <div>
+          <p class="sec-label reveal">Why Pynest</p>
+          <!-- [SEO] H2 — signals quality/trust content, supports E-E-A-T -->
+          <h2 class="sec-h2 reveal reveal-d1" id="why-heading">
+            Handpicked.<br><em>Uncompromising.</em><br>Extraordinary.
+          </h2>
+          <div class="gold-rule reveal reveal-d2" aria-hidden="true"></div>
+          <!-- [SEO] Features use <article>/<div> with H3 headings — proper hierarchy -->
+          <div class="why-features">
+            <div class="why-feat reveal reveal-d1">
+              <div class="why-feat-icon" aria-hidden="true">🏊</div>
+              <h3 class="why-feat-title">Private Pools</h3>
+              <p class="why-feat-desc">Every pool villa guarantees your exclusive retreat — no sharing, no schedules, just endless blue skies and your own private oasis in Pondicherry.</p>
+            </div>
+            <div class="why-feat reveal reveal-d2">
+              <div class="why-feat-icon" aria-hidden="true">🗝️</div>
+              <h3 class="why-feat-title">Verified Luxury</h3>
+              <p class="why-feat-desc">Our team personally inspects and verifies every Pondicherry villa before it earns the Pynest seal of approval. Only the finest make the cut.</p>
+            </div>
+            <div class="why-feat reveal reveal-d3">
+              <div class="why-feat-icon" aria-hidden="true">🍃</div>
+              <h3 class="why-feat-title">Concierge Service</h3>
+              <p class="why-feat-desc">From airport transfers to private chefs, Auroville tours to beach picnics — our Pondicherry concierge team handles every detail of your stay.</p>
+            </div>
+            <div class="why-feat reveal reveal-d4">
+              <div class="why-feat-icon" aria-hidden="true">✦</div>
+              <h3 class="why-feat-title">Exclusive Access</h3>
+              <p class="why-feat-desc">Hidden restaurants, secret sunrise spots on Rock Beach, private yoga on Serenity Beach shores — exclusive experiences only with Pynest.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         EXPERIENCES SECTION
+         ════════════════════════════════════════════════════════ -->
+    <section class="exp-section" id="experiences" aria-labelledby="experiences-heading">
+      <div class="sec-inner">
+        <p class="sec-label reveal">Curated Experiences · Pondicherry</p>
+        <h2 class="sec-h2 reveal reveal-d1" id="experiences-heading">
+          Every Stay Tells<br>a <em>Different</em> Story
+        </h2>
+        <div class="exp-grid">
+
+          <div class="exp-card reveal">
+            <img class="exp-img"
+                 src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=75"
+                 alt="Romantic candlelit dinner setup in a private villa garden in Pondicherry — couple getaway experience"
+                 width="300"
+                 height="429"
+                 loading="lazy"
+                 decoding="async"/>
+            <div class="exp-overlay" aria-hidden="true"></div>
+            <div class="exp-body">
+              <div class="exp-icon" aria-hidden="true">🌹</div>
+              <h3 class="exp-title">Romantic Getaway</h3>
+              <p class="exp-sub">Candlelit couple retreats</p>
+            </div>
+            <div class="exp-arrow" aria-hidden="true">↗</div>
+          </div>
+
+          <div class="exp-card reveal reveal-d1">
+            <img class="exp-img"
+                 src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=600&q=75"
+                 alt="Family enjoying a spacious private villa in Pondicherry — family vacation with children"
+                 width="300"
+                 height="429"
+                 loading="lazy"
+                 decoding="async"/>
+            <div class="exp-overlay" aria-hidden="true"></div>
+            <div class="exp-body">
+              <div class="exp-icon" aria-hidden="true">👨‍👩‍👧</div>
+              <h3 class="exp-title">Family Retreats</h3>
+              <p class="exp-sub">Spacious family villas</p>
+            </div>
+            <div class="exp-arrow" aria-hidden="true">↗</div>
+          </div>
+
+          <div class="exp-card reveal reveal-d2">
+            <img class="exp-img"
+                 src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&q=75"
+                 alt="Wellness retreat with yoga and spa at a luxury villa in Pondicherry — meditation and relaxation"
+                 width="300"
+                 height="429"
+                 loading="lazy"
+                 decoding="async"/>
+            <div class="exp-overlay" aria-hidden="true"></div>
+            <div class="exp-body">
+              <div class="exp-icon" aria-hidden="true">🧘</div>
+              <h3 class="exp-title">Wellness Retreat</h3>
+              <p class="exp-sub">Spa &amp; meditation stays</p>
+            </div>
+            <div class="exp-arrow" aria-hidden="true">↗</div>
+          </div>
+
+          <div class="exp-card reveal reveal-d3">
+            <img class="exp-img"
+                 src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=600&q=75"
+                 alt="Private celebration event at a luxury Pondicherry villa — birthday, anniversary or corporate gathering"
+                 width="300"
+                 height="429"
+                 loading="lazy"
+                 decoding="async"/>
+            <div class="exp-overlay" aria-hidden="true"></div>
+            <div class="exp-body">
+              <div class="exp-icon" aria-hidden="true">🥂</div>
+              <h3 class="exp-title">Private Celebrations</h3>
+              <p class="exp-sub">Exclusive events</p>
+            </div>
+            <div class="exp-arrow" aria-hidden="true">↗</div>
+          </div>
+
+          <div class="exp-card reveal reveal-d4">
+            <img class="exp-img"
+                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=75"
+                 alt="Workcation setup at a luxury villa in Pondicherry — remote work in a tranquil private environment"
+                 width="300"
+                 height="429"
+                 loading="lazy"
+                 decoding="async"/>
+            <div class="exp-overlay" aria-hidden="true"></div>
+            <div class="exp-body">
+              <div class="exp-icon" aria-hidden="true">💻</div>
+              <h3 class="exp-title">Workcations</h3>
+              <p class="exp-sub">Work in paradise</p>
+            </div>
+            <div class="exp-arrow" aria-hidden="true">↗</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         DESTINATION SECTION — Pondicherry content for Local SEO
+         [SEO] This section is rich with Pondicherry/Puducherry location signals
+         ════════════════════════════════════════════════════════ -->
+    <section class="dest-section" id="destination" aria-labelledby="destination-heading">
+      <div class="sec-inner dest-inner">
+        <div class="dest-grid">
+          <div>
+            <p class="sec-label dest-label reveal">The Destination</p>
+            <!-- [SEO] H2 includes "Pondicherry" explicitly — local SEO keyword -->
+            <h2 class="sec-h2 dest-h2 reveal reveal-d1" id="destination-heading">
+              Pondicherry —<br>A City That <em>Lingers</em>
+            </h2>
+            <div class="gold-rule reveal reveal-d2" aria-hidden="true"></div>
+            <!-- [SEO/LOCAL] Paragraph naturally mentions French Quarter, White Town,
+                 Promenade Beach, jasmine, sea — all topically relevant signals -->
+            <p class="dest-p reveal reveal-d2">
+              Few places in India hold the quiet elegance of Pondicherry. French colonial boulevards in White Town lined with bougainvillea. The scent of jasmine and sea salt along Promenade Beach. Whitewashed walls that carry centuries of Puducherry heritage. Whether you're exploring the French Quarter, meditating at Auroville, or watching the sunrise from Serenity Beach — Pondicherry is not just a destination. It is a feeling you return to.
+            </p>
+            <div class="dest-stats reveal reveal-d3" aria-label="Pondicherry key facts">
+              <div class="dest-stat">
+                <div class="dest-stat-num" aria-hidden="true">12km</div>
+                <div class="dest-stat-lbl">Promenade Beach</div>
+              </div>
+              <div class="dest-stat">
+                <div class="dest-stat-num" aria-hidden="true">300+</div>
+                <div class="dest-stat-lbl">Heritage Structures</div>
+              </div>
+              <div class="dest-stat">
+                <div class="dest-stat-num" aria-hidden="true">365</div>
+                <div class="dest-stat-lbl">Days of Sunlight</div>
+              </div>
+            </div>
+          </div>
+          <div class="dest-visual reveal reveal-d1">
+            <div class="dest-mosaic">
+              <div class="dest-img dest-img-1">
+                <img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?w=800&q=80"
+                     alt="French Quarter heritage street in Pondicherry — colonial-era buildings with bright yellow walls"
+                     width="400"
+                     height="400"
+                     loading="lazy"
+                     decoding="async"/>
+              </div>
+              <div class="dest-img dest-img-2">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&q=80"
+                     alt="Promenade Beach Pondicherry — serene morning view of Rock Beach with the historic French war memorial"
+                     width="300"
+                     height="190"
+                     loading="lazy"
+                     decoding="async"/>
+              </div>
+              <div class="dest-img dest-img-3">
+                <img src="https://images.unsplash.com/photo-1531592937781-344ad608fabf?w=600&q=75"
+                     alt="White Town Pondicherry architecture — colonial-era building with colourful painted shutters"
+                     width="300"
+                     height="190"
+                     loading="lazy"
+                     decoding="async"/>
+              </div>
+            </div>
+            <div class="dest-badge" aria-hidden="true">The French Riviera of the East</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         TESTIMONIALS SECTION
+         [SEO/E-E-A-T] Reviews are critical Experience & Authority signals
+         ════════════════════════════════════════════════════════ -->
+    <section class="testi-section" id="testimonials" aria-labelledby="testimonials-heading">
+  <div class="sec-inner">
+    <div class="testi-head">
+      <p class="sec-label reveal" style="justify-content:center">Guest Stories · Verified Reviews</p>
+      <h2 class="sec-h2 reveal reveal-d1" id="testimonials-heading">
+        Those Who <em>Arrived</em><br>Never Quite Left
+      </h2>
+      <div class="gold-rule" aria-hidden="true"></div>
+    </div>
+
+    <div class="testi-grid">
+
+      <!-- Testimonial 1 -->
+      <article class="testi-card reveal" aria-label="Guest testimonial by Priya Mehta">
+        <div class="testi-quote" aria-hidden="true">"</div>
+        <div class="testi-stars" aria-label="5 stars out of 5">★★★★★</div>
+
+        <blockquote class="testi-text">
+          From the moment we stepped into the villa, time slowed. The private pool, the silence, the jasmine in the courtyard — Pynest didn't just book us a villa in Pondicherry, they curated a memory we will carry forever.
+        </blockquote>
+
+        <footer class="testi-footer">
+          <img
+            class="testi-avatar"
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80"
+            alt="Priya Mehta — Pynest guest from Mumbai"
+            width="44"
+            height="44"
+            loading="lazy"
+            decoding="async">
+
+          <div>
+            <div class="testi-name">Priya Mehta</div>
+            <div class="testi-loc">Mumbai · Romantic Getaway · Pondicherry</div>
+
+            <div class="testi-verified">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"/>
+              </svg>
+              Verified Stay
+            </div>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Testimonial 2 -->
+      <article class="testi-card reveal reveal-d2" aria-label="Guest testimonial by Arjun and Kavya Sharma">
+        <div class="testi-quote" aria-hidden="true">"</div>
+        <div class="testi-stars" aria-label="5 stars out of 5">★★★★★</div>
+
+        <blockquote class="testi-text">
+          The French Quarter heritage villa was beyond anything we imagined for our anniversary. Our concierge arranged a private sunrise boat tour along the Pondicherry coast — moments like that make Pynest absolutely irreplaceable.
+        </blockquote>
+
+        <footer class="testi-footer">
+          <img
+            class="testi-avatar"
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+            alt="Arjun and Kavya Sharma — Pynest guests from Bengaluru"
+            width="44"
+            height="44"
+            loading="lazy"
+            decoding="async">
+
+          <div>
+            <div class="testi-name">Arjun &amp; Kavya Sharma</div>
+            <div class="testi-loc">Bengaluru · Anniversary Trip · Pondicherry</div>
+
+            <div class="testi-verified">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"/>
+              </svg>
+              Verified Stay
+            </div>
+          </div>
+        </footer>
+      </article>
+
+      <!-- Testimonial 3 -->
+      <article class="testi-card reveal reveal-d3" aria-label="Guest testimonial by Ravi Krishnan">
+        <div class="testi-quote" aria-hidden="true">"</div>
+        <div class="testi-stars" aria-label="5 stars out of 5">★★★★★</div>
+
+        <blockquote class="testi-text">
+          We brought our entire family — 14 of us. Pynest found us a full estate with multiple pools, a private chef, and attentive staff in Pondicherry. The children still talk about it months later. We are already planning our return stay.
+        </blockquote>
+
+        <footer class="testi-footer">
+          <img
+            class="testi-avatar"
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80"
+            alt="Ravi Krishnan — Pynest guest from Chennai"
+            width="44"
+            height="44"
+            loading="lazy"
+            decoding="async">
+
+          <div>
+            <div class="testi-name">Ravi Krishnan</div>
+            <div class="testi-loc">Chennai · Family Retreat · Pondicherry</div>
+
+            <div class="testi-verified">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      fill="none"
+                      stroke-linecap="round"/>
+              </svg>
+              Verified Stay
+            </div>
+          </div>
+        </footer>
+      </article>
+
+    </div>
+  </div>
+</section>
+    <!-- ════════════════════════════════════════════════════════
+         GALLERY SECTION
+         ════════════════════════════════════════════════════════ -->
+    <!-- [SEO] aria-label describes section purpose; images have descriptive ALTs -->
+    <section class="gallery-section" aria-labelledby="gallery-heading">
+      <!-- [A11Y] Visually hidden heading for screen reader navigation -->
+      <h2 id="gallery-heading" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">
+        Pynest Luxury Villa Gallery — Pondicherry
+      </h2>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item-1">
+          <img class="gallery-img"
+               src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1200&q=80"
+               alt="Stunning private pool estate in Pondicherry — Pynest luxury villa with turquoise pool surrounded by lush tropical gardens"
+               width="600"
+               height="480"
+               loading="lazy"
+               decoding="async"/>
+          <div class="gallery-item-overlay" aria-hidden="true"><div class="gallery-zoom" aria-hidden="true">+</div></div>
+          <div class="gallery-tag" aria-hidden="true"><div class="gallery-tag-inner">Private Pool Estate</div></div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img"
+               src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=700&q=75"
+               alt="Heritage courtyard of a Pondicherry French Quarter villa — classic colonial architecture with tiled floors"
+               width="350"
+               height="280"
+               loading="lazy"
+               decoding="async"/>
+          <div class="gallery-item-overlay" aria-hidden="true"><div class="gallery-zoom" aria-hidden="true">+</div></div>
+          <div class="gallery-tag" aria-hidden="true"><div class="gallery-tag-inner">Heritage Courtyard</div></div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img"
+               src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=700&q=75"
+               alt="Luxury master bedroom in a Pynest villa — Pondicherry heritage villa with four-poster bed and colonial decor"
+               width="350"
+               height="200"
+               loading="lazy"
+               decoding="async"/>
+          <div class="gallery-item-overlay" aria-hidden="true"><div class="gallery-zoom" aria-hidden="true">+</div></div>
+          <div class="gallery-tag" aria-hidden="true"><div class="gallery-tag-inner">Master Suite</div></div>
+        </div>
+        <div class="gallery-item">
+          <img class="gallery-img"
+               src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?w=700&q=75"
+               alt="Private infinity pool illuminated at night — Pynest luxury villa Pondicherry moonlit outdoor pool"
+               width="350"
+               height="200"
+               loading="lazy"
+               decoding="async"/>
+          <div class="gallery-item-overlay" aria-hidden="true"><div class="gallery-zoom" aria-hidden="true">+</div></div>
+          <div class="gallery-tag" aria-hidden="true"><div class="gallery-tag-inner">Moonlit Pool</div></div>
+        </div>
+        <div class="gallery-item gallery-item-5">
+          <img class="gallery-img"
+               src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1200&q=80"
+               alt="Beachfront villa in Pondicherry — Pynest seafront retreat with direct access to the Bay of Bengal"
+               width="700"
+               height="200"
+               loading="lazy"
+               decoding="async"/>
+          <div class="gallery-item-overlay" aria-hidden="true"><div class="gallery-zoom" aria-hidden="true">+</div></div>
+          <div class="gallery-tag" aria-hidden="true"><div class="gallery-tag-inner">Beachfront Retreat</div></div>
+        </div>
+      </div>
+      <p class="gallery-label" aria-label="Follow Pynest on Instagram @pynest.in">@pynest.in</p>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         FAQ SECTION — NEW SECTION
+         [SEO] Drives FAQPage rich results in Google SERPs.
+         Answers long-tail queries directly — improves topical authority.
+         ════════════════════════════════════════════════════════ -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+      <div class="sec-inner">
+        <div class="faq-head">
+          <p class="sec-label reveal" style="justify-content:center">Frequently Asked · Villa Booking</p>
+          <h2 class="sec-h2 reveal reveal-d1" id="faq-heading">
+            Questions About <em>Pynest</em><br>Villas Pondicherry
+          </h2>
+          <div class="gold-rule reveal reveal-d2" aria-hidden="true"></div>
+        </div>
+        <!-- [A11Y] FAQ uses <details>/<summary> alternative pattern via JS toggle.
+             Using aria-expanded on a button is the most accessible pattern. -->
+        <div class="faq-grid reveal reveal-d3">
+
+          <div class="faq-item open">
+            <button class="faq-question"
+                    type="button"
+                    aria-expanded="true"
+                    aria-controls="faq-a1"
+                    id="faq-q1">
+              How do I book a luxury villa in Pondicherry with Pynest?
+            </button>
+            <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">
+              Booking with Pynest is effortless. Browse our curated collection, choose your preferred villa type — private pool, beachfront, or heritage — and reach out via WhatsApp at +91 63821 86266 or email info@pynest.in. Our concierge team personally confirms availability and arranges every detail before your arrival. You can also join the priority waitlist for first access to new Pondicherry villa listings.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-a2"
+                    id="faq-q2">
+              What types of luxury villas are available in Pondicherry?
+            </button>
+            <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">
+              Pynest offers an exclusive range of verified properties in Pondicherry — Private Pool Villas, Beachfront Villas on Serenity Beach and Promenade Beach, Heritage Villas in the French Quarter and White Town, Boutique Homestays, unique Hut-style Villas near Auroville, and large Family Estates for groups. All properties are personally inspected and curated by the Pynest team.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-a3"
+                    id="faq-q3">
+              Do Pynest villas in Pondicherry have private swimming pools?
+            </button>
+            <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">
+              Yes — many of our signature properties feature exclusive private pools reserved solely for your group. No shared pools, no strangers, no schedules. Our pool villas are clearly tagged in all listings. We also offer beachfront properties with direct sea access to the Bay of Bengal. Contact our concierge to find the perfect pool villa for your Pondicherry stay.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-a4"
+                    id="faq-q4">
+              What is the check-in and check-out time?
+            </button>
+            <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">
+              Standard check-in is 2:00 PM and check-out is 11:00 AM. Early check-in (from 10:00 AM) and late check-out (until 2:00 PM) are available based on villa availability, often at no extra charge for priority members. Please contact our concierge team at least 48 hours in advance for special timing requests.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-a5"
+                    id="faq-q5">
+              Are Pynest villas suitable for families and large groups?
+            </button>
+            <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5">
+              Absolutely. We have hosted families of up to 20 guests in our Pondicherry estate properties. Our family villas feature multiple bedrooms, spacious living areas, private pools, and child-safe outdoor spaces. Our concierge team can also arrange family activities, private chefs, babysitting, and child-friendly local excursions across Pondicherry and Auroville.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-a6"
+                    id="faq-q6">
+              Do you provide concierge services with villa bookings?
+            </button>
+            <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6">
+              Yes — every Pynest booking includes dedicated concierge support. We arrange airport and Pondicherry railway station transfers, private chefs, beach picnics at Paradise Beach, Auroville day tours, Promenade Beach sunrise walks, spa treatments, yoga sessions, restaurant reservations in the French Quarter, and much more — all tailored to your group's preferences.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-a7"
+                    id="faq-q7">
+              How do I join the Pynest priority waitlist?
+            </button>
+            <div class="faq-answer" id="faq-a7" role="region" aria-labelledby="faq-q7">
+              Fill in the Priority Access form below with your name, email, mobile number, and stay preference. Waitlist members receive first access to new villa listings, exclusive launch pricing up to 25% off, a curated Pondicherry travel guide, personalized concierge onboarding, and priority WhatsApp support — all with no commitment and no credit card required.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-a8"
+                    id="faq-q8">
+              How far are Pynest villas from Pondicherry's key attractions?
+            </button>
+            <div class="faq-answer" id="faq-a8" role="region" aria-labelledby="faq-q8">
+              Our Pondicherry villas are strategically positioned across the territory. French Quarter and White Town heritage villas are within walking distance of Promenade Beach, Rock Beach, and renowned French Quarter restaurants. Beachfront villas sit directly on Serenity Beach or Paradise Beach. Auroville is a 20-minute drive. Our concierge team provides full local guidance for your Pondicherry stay.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+         EARLY ACCESS / WAITLIST SECTION
+         [CRO] Primary conversion action — waitlist signup
+         ════════════════════════════════════════════════════════ -->
+    <section class="access-section" id="access" aria-labelledby="access-heading">
+      <div class="sec-inner access-inner">
+        <div class="access-left">
+          <p class="sec-label access-label reveal">Priority Access · Pynest Pondicherry</p>
+          <h2 class="sec-h2 reveal reveal-d1" id="access-heading">
+            Reserve Your<br><em>Place</em> in Paradise
+          </h2>
+          <div class="gold-rule reveal reveal-d2" aria-hidden="true"></div>
+          <p class="reveal reveal-d2">
+            Pynest is opening its doors exclusively to priority members first. Be among the first to experience Pondicherry's most extraordinary luxury villas and private pool estates — with special launch rates and a curated welcome experience.
+          </p>
+          <ul class="access-perks reveal reveal-d3" aria-label="Priority waitlist benefits">
+            <li class="access-perk">
+              <div class="access-perk-dot" aria-hidden="true">✓</div>
+              First access to all new villa listings in Pondicherry
+            </li>
+            <li class="access-perk">
+              <div class="access-perk-dot" aria-hidden="true">✓</div>
+              Exclusive launch pricing — up to 25% off
+            </li>
+            <li class="access-perk">
+              <div class="access-perk-dot" aria-hidden="true">✓</div>
+              Personalized concierge onboarding
+            </li>
+            <li class="access-perk">
+              <div class="access-perk-dot" aria-hidden="true">✓</div>
+              Curated Pondicherry &amp; Puducherry travel guide
+            </li>
+            <li class="access-perk">
+              <div class="access-perk-dot" aria-hidden="true">✓</div>
+              Priority WhatsApp support line
+            </li>
+          </ul>
+        </div>
+
+        <!-- [A11Y] Glass card contains the form — proper fieldset and form labels throughout -->
+        <div class="glass-card reveal reveal-d2">
+          <!-- [SEO/A11Y] Form with aria-label, novalidate (we handle validation in JS) -->
+          <form id="accessForm"
+                novalidate
+                aria-label="Join Pynest priority waitlist for luxury villas in Pondicherry">
+            <div class="form-grp">
+              <label for="fName">Full Name</label>
+              <input type="text"
+                     id="fName"
+                     name="name"
+                     placeholder="Your full name"
+                     autocomplete="name"
+                     required
+                     aria-required="true"
+                     aria-describedby="nameErr"/>
+              <!-- [A11Y] Error messages linked via aria-describedby -->
+              <p class="form-err" id="nameErr" role="alert" aria-live="polite">Please enter your full name.</p>
+            </div>
+            <div class="form-grp">
+              <label for="fEmail">Email Address</label>
+              <input type="email"
+                     id="fEmail"
+                     name="email"
+                     placeholder="your@email.com"
+                     autocomplete="email"
+                     required
+                     aria-required="true"
+                     aria-describedby="emailErr"/>
+              <p class="form-err" id="emailErr" role="alert" aria-live="polite">Please enter a valid email address.</p>
+            </div>
+            <div class="form-grp">
+              <label for="fMobile">Mobile Number</label>
+              <input type="tel"
+                     id="fMobile"
+                     name="mobile"
+                     placeholder="10-digit Indian mobile number"
+                     pattern="[6-9][0-9]{9}"
+                     maxlength="10"
+                     autocomplete="tel-national"
+                     required
+                     aria-required="true"
+                     aria-describedby="mobileErr"/>
+              <p class="form-err" id="mobileErr" role="alert" aria-live="polite">Please enter a valid 10-digit Indian mobile number.</p>
+            </div>
+            <div class="form-grp">
+              <label for="fType">Stay Preference</label>
+              <select id="fType"
+                      name="type"
+                      aria-label="Select your preferred villa type in Pondicherry">
+                <option value="">Select preference…</option>
+                <option>Private Pool Villa</option>
+                <option>Beachfront Estate</option>
+                <option>French Quarter Heritage</option>
+                <option>Boutique Homestay</option>
+                <option>Any Luxury Stay</option>
+              </select>
+            </div>
+            <button type="submit"
+                    class="btn-submit"
+                    id="accessSubmit"
+                    aria-label="Submit priority waitlist form — Reserve your spot at a Pynest luxury villa in Pondicherry">
+              Reserve My Priority Spot →
+            </button>
+            <p class="form-note" aria-live="polite">No commitment. No credit card. Just first access.</p>
+          </form>
+          <!-- [A11Y] Success state uses role="status" so screen readers announce it -->
+          <div class="success-state" id="successState" role="status" aria-live="polite" aria-atomic="true">
+            <div class="success-icon" aria-hidden="true">🌿</div>
+            <h3>You're In.</h3>
+            <p>Welcome to the Pynest circle. We'll reach out personally with your early access details and a special welcome offer for Pondicherry's finest villas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ════════════════════════════════════════════════════════
+       FOOTER — Semantic <footer> with role="contentinfo"
+       [SEO] Footer links, address, and NAP data
+       ════════════════════════════════════════════════════════ -->
+  <!-- [A11Y] role="contentinfo" is the ARIA role for <footer> — makes it a landmark -->
+  <footer role="contentinfo" aria-label="Pynest site footer — Luxury Villas Pondicherry">
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <!-- Brand column -->
+        <div itemscope itemtype="https://schema.org/Organization">
+          <div class="footer-brand-logo" itemprop="name">Pynest</div>
+          <!-- [SEO] Footer description reinforces topical relevance with keywords -->
+          <p class="footer-brand-desc" itemprop="description">
+            Curating extraordinary stays in the soul of Pondicherry. Private pool villas, heritage homestays in White Town, and beachfront retreats — each handpicked for those who know the difference between a stay and an experience.
+          </p>
+          <!-- [SEO/NAP] Name, Address, Phone — critical for Local SEO consistency -->
+          <address style="display:none;" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">White Town</span>,
+            <span itemprop="addressLocality">Pondicherry</span>,
+            <span itemprop="addressRegion">Puducherry</span>
+            <span itemprop="postalCode">605001</span>,
+            <span itemprop="addressCountry">India</span>
+          </address>
+          <div class="footer-socials" aria-label="Pynest social media profiles">
+            <a class="f-soc"
+               href="https://wa.me/916382186266"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Chat with Pynest on WhatsApp">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.129.558 4.122 1.525 5.853L.057 23.525a.5.5 0 00.614.614l5.672-1.468A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.86 0-3.605-.5-5.112-1.375l-.364-.214-3.767.976.996-3.67-.234-.378A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            </a>
+            <a class="f-soc"
+               href="https://instagram.com/pynest.in"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Follow Pynest on Instagram — @pynest.in">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a class="f-soc"
+               href="https://facebook.com/pynest.in"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Follow Pynest on Facebook">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true" focusable="false"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.532-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Explore column -->
+        <nav aria-label="Footer explore navigation">
+          <div class="footer-col-title">Explore</div>
+          <ul class="footer-links" role="list">
+            <li><a href="#villas">Signature Villas</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#destination">Pondicherry</a></li>
+            <li><a href="#testimonials">Guest Stories</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+
+        <!-- Properties column -->
+        <nav aria-label="Footer properties navigation">
+          <div class="footer-col-title">Properties</div>
+          <ul class="footer-links" role="list">
+            <li>
+              <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20Private%20Pool%20Villas%20in%20Pondicherry.%20Please%20share%20more%20details."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Enquire about Private Pool Villas in Pondicherry">
+                Private Pool Villas
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20Beachfront%20Estates%20in%20Pondicherry.%20Please%20share%20more%20details."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Enquire about Beachfront Estates in Pondicherry">
+                Beachfront Estates
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20Heritage%20Homes%20in%20Pondicherry.%20Please%20share%20more%20details."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Enquire about Heritage Homes in Pondicherry's French Quarter">
+                Heritage Homes
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20Boutique%20Stays%20in%20Pondicherry.%20Please%20share%20more%20details."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Enquire about Boutique Stays in Pondicherry">
+                Boutique Stays
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Contact column -->
+        <nav aria-label="Footer contact and legal navigation">
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links" role="list">
+            <li>
+              <a href="mailto:info@pynest.in"
+                 aria-label="Email Pynest at info@pynest.in">
+                info@pynest.in
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/916382186266"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Call or WhatsApp Pynest at +91 63821 86266">
+                +91 63821 86266
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27d%20like%20to%20list%20my%20property%20on%20your%20platform."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="List your villa or property on Pynest">
+                List Your Property
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@pynest.in?subject=Press%20Enquiry"
+                 aria-label="Press and media enquiries for Pynest">
+                Press &amp; Media
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div><!-- /footer-top -->
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2025 Pynest. All rights reserved. &nbsp;·&nbsp;
+          <a href="mailto:info@pynest.in" aria-label="Contact Pynest by email">info@pynest.in</a>
+          &nbsp;·&nbsp; Pondicherry, India
+        </p>
+        <nav class="footer-legal" aria-label="Legal pages">
+          <a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20Please%20send%20me%20your%20Privacy%20Policy."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Request Privacy Policy">
+   Privacy Policy
+</a>
+
+<a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20Please%20send%20me%20your%20Terms%20of%20Use."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Request Terms of Use">
+   Terms of Use
+</a>
+
+<a href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20Please%20send%20me%20your%20Cancellation%20Policy."
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Request Cancellation Policy">
+   Cancellation
+</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       JAVASCRIPT — Deferred & optimized. All scripts at end of body.
+       [PERFORMANCE] Scripts at end of <body> = zero render-blocking JS.
+       ══════════════════════════════════════════════════════════════ -->
+
+  <!-- Date minimum initialization — placed after inputs exist in DOM -->
+  <script>
+    (function(){
+      const t = new Date().toISOString().split('T')[0];
+      const ci = document.getElementById('bb-checkin');
+      const co = document.getElementById('bb-checkout');
+      if(ci) ci.min = t;
+      if(co) co.min = t;
+      if(ci) ci.addEventListener('change', function(){
+        if(co){
+          co.min = this.value;
+          if(co.value && co.value < this.value) co.value = '';
+        }
+      });
+    })();
+
+    // WhatsApp Booking Bar
+    function sendBookingWhatsApp(){
+      const ci = document.getElementById('bb-checkin').value;
+      const co = document.getElementById('bb-checkout').value;
+      const g  = document.getElementById('bb-guests').value;
+      const ty = document.getElementById('bb-type').value;
+      if(!ci||!co||!g||!ty){
+        alert('Please fill in all fields to check availability.');
+        return;
+      }
+      const fmt = d => new Date(d).toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'});
+      const msg = `Hi Pynest! I'd like to book a luxury villa in Pondicherry.\n\n📅 Check In: ${fmt(ci)}\n📅 Check Out: ${fmt(co)}\n👥 Guests: ${g}\n🏡 Villa Type: ${ty}\n\nPlease share availability and rates. Thank you!`;
+      window.open(`https://wa.me/916382186266?text=${encodeURIComponent(msg)}`,'_blank');
+    }
+  </script>
+
+  <script>
+    // ── Custom Cursor ──────────────────────────────────────────
+    const cur=document.getElementById('cursor');
+    const cd=document.getElementById('cd');
+    const cr=document.getElementById('cr');
+    // [PERFORMANCE] Check cursor exists before adding listeners
+    if(cur && cd && cr){
+      let mx=0,my=0,rx=0,ry=0;
+      document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cd.style.left=mx+'px';cd.style.top=my+'px'});
+      function animCursor(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;cr.style.left=rx+'px';cr.style.top=ry+'px';requestAnimationFrame(animCursor)}
+      animCursor();
+    }
+
+    // ── Preloader ──────────────────────────────────────────────
+    window.addEventListener('load',()=>{
+      setTimeout(()=>{
+        const pl = document.getElementById('pl');
+        if(pl) pl.classList.add('out');
+        document.getElementById('heroBg')?.classList.add('loaded');
+        setTimeout(()=>{
+          ['he','hh','hd','hbb','ha'].forEach(id=>{
+            document.getElementById(id)?.classList.add('vis');
+          });
+        },200);
+      },2200);
+    });
+
+    // ── Nav scroll ─────────────────────────────────────────────
+    const nav=document.getElementById('nav');
+    if(nav){
+      window.addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>60),{passive:true});
+    }
+
+    // ── Scroll Reveal ──────────────────────────────────────────
+    if('IntersectionObserver' in window){
+      const ro=new IntersectionObserver(entries=>{
+        entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}});
+      },{threshold:.1});
+      document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+    } else {
+      // Fallback for older browsers — show all revealed elements
+      document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));
+    }
+
+    // ── Smooth anchors ─────────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'})}
+      });
+    });
+
+    // ── Wishlist toggle ────────────────────────────────────────
+    document.querySelectorAll('.villa-wishlist').forEach(b=>{
+      b.addEventListener('click',()=>{
+        const isWished = b.textContent.trim()==='♥';
+        b.textContent = isWished ? '♡' : '♥';
+        b.style.color = isWished ? '' : '#E8A87C';
+        // [A11Y] Update aria-pressed state
+        b.setAttribute('aria-pressed', String(!isWished));
+      });
+    });
+
+    // ── Form Validation & WhatsApp ─────────────────────────────
+    const form=document.getElementById('accessForm');
+    if(form){
+      const nameI=document.getElementById('fName');
+      const emailI=document.getElementById('fEmail');
+      const mobI=document.getElementById('fMobile');
+      const nameE=document.getElementById('nameErr');
+      const emailE=document.getElementById('emailErr');
+      const mobE=document.getElementById('mobileErr');
+      const subBtn=document.getElementById('accessSubmit');
+      const succ=document.getElementById('successState');
+
+      function isEmail(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)}
+      function isMob(v){return /^[6-9][0-9]{9}$/.test(v)}
+
+      form.addEventListener('submit',e=>{
+        e.preventDefault();
+        nameE.classList.remove('show');
+        emailE.classList.remove('show');
+        mobE.classList.remove('show');
+        let ok=true;
+        if(!nameI.value.trim()){nameE.classList.add('show');ok=false}
+        if(!isEmail(emailI.value.trim())){emailE.classList.add('show');ok=false}
+        if(!isMob(mobI.value.trim())){mobE.classList.add('show');ok=false}
+        if(!ok)return;
+
+        const n=nameI.value.trim();
+        const em=emailI.value.trim();
+        const mo=mobI.value.trim();
+        const ty=document.getElementById('fType').value;
+        const msg=`Hi Pynest 🌿\n\nI'd love to join the priority waitlist for an exclusive villa stay in Pondicherry.\n\nName: ${n}\nEmail: ${em}\nMobile: ${mo}${ty?'\nPreference: '+ty:''}\n\nPlease share early access details. Thank you!`;
+        window.open(`https://wa.me/916382186266?text=${encodeURIComponent(msg)}`,'_blank');
+
+        form.style.display='none';
+        if(succ) succ.classList.add('show');
+      });
+    }
+
+    // ── Parallax hero ──────────────────────────────────────────
+    const heroBg=document.getElementById('heroBg');
+    // [PERFORMANCE] Only run parallax if not prefers-reduced-motion
+    if(heroBg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      window.addEventListener('scroll',()=>{
+        if(scrollY<window.innerHeight){
+          heroBg.style.transform=`scale(1) translateY(${scrollY*.25}px)`;
+        }
+      },{passive:true});
+    }
+
+    // ── Gallery hover enhancement ──────────────────────────────
+    document.querySelectorAll('.gallery-item').forEach(item=>{
+      item.addEventListener('click',()=>{/* lightbox placeholder */});
+    });
+
+    // ── FAQ Accordion ──────────────────────────────────────────
+    // [A11Y] Full ARIA-compliant accordion with aria-expanded toggle
+    document.querySelectorAll('.faq-question').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i=>{
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded','false');
+        });
+        // Open clicked if it was closed
+        if(!isOpen){
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded','true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

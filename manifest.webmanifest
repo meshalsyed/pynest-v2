@@ -1,0 +1,11 @@
+{
+  "name": "Pynest — Luxury Villas & Private Retreats, Pondicherry",
+  "short_name": "Pynest",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#12181A",
+  "theme_color": "#D4AF72",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
