@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  PYNEST — ABOUT · Luxury Villas & Private Retreats · Pondicherry   ║
+  ║  Sample inner page — establishes the shared component pattern      ║
+  ║  used by every future page (navbar / footer / social-dock via      ║
+  ║  /assets/js/include.js). Design tokens identical to the homepage.  ║
+  ╚══════════════════════════════════════════════════════════════════╝
+-->
+<html lang="en-IN">
+<head>
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDM6CM1XHM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NDM6CM1XHM', { 'anonymize_ip': true });
+  </script>
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+
+  <!-- PRIMARY SEO META -->
+  <title>About Pynest | Luxury Villas & Heritage Stays in Pondicherry</title>
+  <meta name="description" content="Pynest curates private pool villas, heritage homestays in White Town, and beachfront retreats across Pondicherry. Discover the story, values, and people behind Pynest."/>
+  <link rel="canonical" href="https://pynest.in/about/"/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Pynest"/>
+  <meta property="og:title" content="About Pynest | Luxury Villas & Heritage Stays in Pondicherry"/>
+  <meta property="og:description" content="Pynest curates private pool villas, heritage homestays in White Town, and beachfront retreats across Pondicherry."/>
+  <meta property="og:url" content="https://pynest.in/about/"/>
+  <meta property="og:image" content="https://pynest.in/assets/images/og/about-og.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="About Pynest | Luxury Villas & Heritage Stays in Pondicherry"/>
+  <meta name="twitter:description" content="Pynest curates private pool villas, heritage homestays in White Town, and beachfront retreats across Pondicherry."/>
+  <meta name="twitter:image" content="https://pynest.in/assets/images/og/about-og.jpg"/>
+
+  <link rel="icon" href="/favicon.ico" sizes="any"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+  <link rel="manifest" href="/manifest.webmanifest"/>
+
+  <!-- FONTS — same families/weights as the homepage -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Jost:wght@200;300;400;500;600&family=Cormorant:ital,wght@1,300;1,400&display=swap" rel="stylesheet"/>
+
+  <!-- SHARED DESIGN SYSTEM (do not duplicate — extend only) -->
+  <link rel="stylesheet" href="/assets/css/base.css"/>
+  <link rel="stylesheet" href="/assets/css/inner-page.css"/>
+
+  <!-- [SEO] BreadcrumbList schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://pynest.in/"},
+      {"@type":"ListItem","position":2,"name":"About","item":"https://pynest.in/about/"}
+    ]
+  }
+  </script>
+
+  <!-- [SEO] Organization schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Pynest",
+    "url": "https://pynest.in/",
+    "logo": "https://pynest.in/assets/images/brand/pynestlogo.png",
+    "sameAs": [
+      "https://instagram.com/pynest.in",
+      "https://facebook.com/pynest.in"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-63821-86266",
+      "contactType": "customer service",
+      "areaServed": "IN"
+    }
+  }
+  </script>
+
+  <style>
+    /* Page-specific overrides only — everything reusable lives in
+       /assets/css/base.css and /assets/css/inner-page.css */
+    .about-story-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+    @media(max-width:860px){.about-story-grid{grid-template-columns:1fr;gap:40px}}
+    .about-story-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r4);box-shadow:var(--s3)}
+  </style>
+</head>
+
+<body data-nav-key="about">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Floating social dock — injected by include.js -->
+  <div id="site-social-dock"></div>
+
+  <!-- Navbar — injected by include.js -->
+  <div id="site-header"></div>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="About Pynest">
+      <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1544984243-ec57ea16fe25?w=1920&q=80')" aria-hidden="true"></div>
+      <div class="page-hero-overlay" aria-hidden="true"></div>
+      <div class="page-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li aria-current="page">About</li>
+          </ol>
+        </nav>
+        <div class="page-hero-eyebrow"><span></span> Our Story</div>
+        <h1 class="page-hero-h1">The soul of Pondicherry, <em>curated for you</em></h1>
+        <p class="page-hero-desc">Pynest was born from a simple belief — that a stay should feel like an invitation into a place, not a transaction. Every villa in our collection is chosen, not listed.</p>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="content-section">
+      <div class="sec-inner">
+        <div class="about-story-grid">
+          <div class="reveal">
+            <img class="about-story-img" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&q=80" alt="Whitewashed heritage villa courtyard in Pondicherry's French Quarter" loading="lazy" decoding="async" width="1000" height="1250"/>
+          </div>
+          <div class="reveal reveal-d2">
+            <div class="sec-label">Why Pynest</div>
+            <h2 class="sec-h2">Built by people who <em>love this coastline</em></h2>
+            <div class="gold-rule"></div>
+            <div class="content-prose">
+              <p>Pynest started with one villa in White Town and a conviction that Pondicherry deserved a hospitality brand as considered as the town itself — French colonial streets, quiet beaches, and a slower rhythm of life.</p>
+              <p>Today, we work with a handpicked portfolio of private pool villas, beachfront estates, and heritage homestays, each personally inspected and managed to a single standard: would we stay here ourselves?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="content-section" style="background:var(--cr)">
+      <div class="sec-inner">
+        <div class="sec-label">What We Stand For</div>
+        <h2 class="sec-h2">Hospitality, <em>done properly</em></h2>
+        <div class="value-grid">
+          <div class="value-card reveal">
+            <div class="value-icon">🏡</div>
+            <div class="value-title">Handpicked, Not Listed</div>
+            <div class="value-desc">Every property is personally vetted for design, privacy, and comfort before it joins the Pynest collection.</div>
+          </div>
+          <div class="value-card reveal reveal-d2">
+            <div class="value-icon">🤝</div>
+            <div class="value-title">Concierge, Always On</div>
+            <div class="value-desc">From airport transfers to private chefs, our concierge team is one WhatsApp message away throughout your stay.</div>
+          </div>
+          <div class="value-card reveal reveal-d3">
+            <div class="value-icon">🌿</div>
+            <div class="value-title">Rooted in Pondicherry</div>
+            <div class="value-desc">We're locals first — every recommendation, from restaurants to beaches, comes from people who live here.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="sec-inner">
+        <div class="sec-label" style="justify-content:center">Get In Touch</div>
+        <h2 class="sec-h2">Ready to find <em>your villa?</em></h2>
+        <p>Message our concierge team on WhatsApp for real-time availability, rates, and personalised recommendations.</p>
+        <div class="cta-actions">
+          <a class="btn-gold" href="https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27d%20like%20to%20know%20more%20about%20your%20villas." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+          <a class="btn-outline" href="/villas/">Browse Villas</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer — injected by include.js -->
+  <div id="site-footer"></div>
+
+  <script src="/assets/js/include.js"></script>
+</body>
+</html>
