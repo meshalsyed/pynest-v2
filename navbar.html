@@ -1,0 +1,39 @@
+<!-- ══════════════════════════════════════════════════════════════
+     COMPONENT: NAVBAR
+     Injected by /assets/js/include.js into <div id="site-header">.
+     Markup mirrors the homepage nav exactly (same classes = same CSS).
+     data-nav-key on each link is used to auto-highlight the active page.
+     ══════════════════════════════════════════════════════════════ -->
+<header>
+  <nav id="nav" role="navigation" aria-label="Main navigation — Pynest Luxury Villas Pondicherry">
+    <a href="/" class="nav-logo" aria-label="Pynest — Luxury Villas Pondicherry — Return to homepage">
+      <img src="/assets/images/brand/pynestlogo.png"
+           alt="Pynest — Luxury Villas &amp; Heritage Stays in Pondicherry"
+           class="logo-img"
+           width="180"
+           height="60"
+           loading="eager"
+           decoding="async"/>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="/villas/" data-nav-key="villas" aria-label="View Pynest signature villa collection">Villas</a></li>
+      <li><a href="/experiences/" data-nav-key="experiences" aria-label="Explore curated Pondicherry experiences">Experiences</a></li>
+      <li><a href="/destinations/" data-nav-key="destinations" aria-label="Discover Pondicherry as a destination">Pondicherry</a></li>
+      <li><a href="/about/" data-nav-key="about" aria-label="About Pynest">About</a></li>
+      <li><a href="/faq/" data-nav-key="faq" aria-label="Frequently asked questions about Pynest villas">FAQ</a></li>
+      <li>
+        <a href="/contact/" data-nav-key="contact" aria-label="Contact Pynest">
+          Contact
+        </a>
+      </li>
+    </ul>
+
+    <button class="nav-cta"
+            type="button"
+            aria-label="Get priority access to Pynest luxury villas in Pondicherry"
+            onclick="window.open('https://wa.me/916382186266?text=Hi%20Pynest%2C%20I%27m%20interested%20in%20your%20luxury%20villas%20and%20homestays%20in%20Pondicherry.%20Please%20share%20more%20details.', '_blank')">
+      Priority Access
+    </button>
+  </nav>
+</header>

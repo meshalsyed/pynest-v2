@@ -1,0 +1,70 @@
+/* ══════════════════════════════════════════════════════════════════
+   PYNEST — INNER PAGE LAYOUT
+   New reusable patterns for pages beyond the homepage (About, Villas,
+   Destinations, Blog, Legal, etc). Built strictly from tokens in
+   base.css — same fonts, same gold accent, same motion language.
+   ══════════════════════════════════════════════════════════════════ */
+
+/* Placeholder that navbar/footer JS injects into — no layout shift:
+   height reserved to match compact nav so CLS stays near 0 */
+#site-header{min-height:76px}
+
+/* ─── PAGE HERO (compact banner for inner pages, not full viewport) ─── */
+.page-hero{position:relative;min-height:46vh;display:flex;align-items:flex-end;overflow:hidden;padding:140px 5vw 64px;background:#12181A}
+.page-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.55}
+.page-hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,18,20,.55) 0%,rgba(12,18,20,.35) 40%,rgba(12,18,20,.92) 100%)}
+.page-hero-content{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%}
+.page-hero-eyebrow{font-family:var(--ff-b);font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;color:rgba(201,169,110,.75);margin-bottom:18px;display:flex;align-items:center;gap:16px}
+.page-hero-eyebrow span{display:block;width:36px;height:1px;background:var(--g)}
+.page-hero-h1{font-family:var(--ff-h);font-size:clamp(2.4rem,6vw,4.6rem);font-weight:300;line-height:1.08;color:var(--wh)}
+.page-hero-h1 em{font-style:italic;color:var(--gl)}
+.page-hero-desc{font-size:.95rem;font-weight:200;line-height:1.8;color:rgba(255,255,255,.6);max-width:620px;margin-top:18px}
+
+/* ─── BREADCRUMB ─── */
+.breadcrumb{position:relative;z-index:2;margin-bottom:20px}
+.breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:var(--ff-b);font-size:.62rem;letter-spacing:.15em;text-transform:uppercase}
+.breadcrumb li{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.35)}
+.breadcrumb a{color:rgba(255,255,255,.5);text-decoration:none;transition:color .3s}
+.breadcrumb a:hover{color:var(--g)}
+.breadcrumb li[aria-current="page"]{color:var(--g)}
+.breadcrumb li:not(:last-child)::after{content:'/';margin-left:8px;color:rgba(201,169,110,.4)}
+
+/* ─── GENERIC CONTENT SECTION (About / Legal / Blog body copy) ─── */
+.content-section{background:var(--iv)}
+.content-prose{max-width:760px;margin:0 auto}
+.content-prose h2{font-family:var(--ff-h);font-size:clamp(1.7rem,3vw,2.6rem);font-weight:400;color:var(--td);margin:48px 0 16px}
+.content-prose h2:first-child{margin-top:0}
+.content-prose h3{font-family:var(--ff-h);font-size:1.35rem;font-weight:500;color:var(--td);margin:32px 0 12px}
+.content-prose p{font-size:.92rem;font-weight:300;line-height:1.9;color:var(--tm);margin-bottom:18px}
+.content-prose ul,.content-prose ol{margin:0 0 18px 20px;color:var(--tm);font-size:.92rem;line-height:1.9;font-weight:300}
+.content-prose a{color:var(--gd);text-decoration:underline;text-underline-offset:3px}
+
+/* ─── VALUE / STAT GRID (About page highlights) ─── */
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+@media(max-width:800px){.value-grid{grid-template-columns:1fr}}
+.value-card{background:var(--wh);border:1px solid rgba(196,176,154,.25);border-radius:var(--r3);padding:32px;transition:all .35s}
+.value-card:hover{transform:translateY(-6px);box-shadow:var(--s2);border-color:rgba(201,169,110,.35)}
+.value-icon{font-size:1.6rem;margin-bottom:14px}
+.value-title{font-family:var(--ff-h);font-size:1.25rem;font-weight:500;color:var(--td);margin-bottom:8px}
+.value-desc{font-size:.82rem;font-weight:300;line-height:1.75;color:var(--tm)}
+
+/* ─── TEAM / FOUNDER STRIP ─── */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+@media(max-width:800px){.team-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.team-grid{grid-template-columns:1fr}}
+.team-card{text-align:center}
+.team-photo{width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--r3);margin-bottom:14px;background:var(--c2)}
+.team-name{font-family:var(--ff-h);font-size:1.1rem;color:var(--td);margin-bottom:2px}
+.team-role{font-family:var(--ff-b);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gd)}
+
+/* ─── CTA BAND (reusable closing CTA on every inner page) ─── */
+.cta-band{background:linear-gradient(150deg,#0D1315 0%,#182024 50%,#0D1315 100%);text-align:center;padding:96px 5vw}
+.cta-band .sec-h2{color:var(--wh)}
+.cta-band .sec-h2 em{color:var(--gl)}
+.cta-band p{max-width:520px;margin:18px auto 32px;color:rgba(255,255,255,.5);font-size:.9rem;font-weight:200;line-height:1.8}
+.cta-band .cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+/* ─── FOCUS / A11Y (inner-page forms, links) ─── */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  outline:2px solid var(--g);outline-offset:3px;
+}
